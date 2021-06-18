@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/PTJ-90-Project/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/PTJ-90-Project/static/js/main.82e3b50f.chunk.js",
+    "main.js.map": "/PTJ-90-Project/static/js/main.82e3b50f.chunk.js.map",
+    "runtime-main.js": "/PTJ-90-Project/static/js/runtime-main.30abdf8d.js",
+    "runtime-main.js.map": "/PTJ-90-Project/static/js/runtime-main.30abdf8d.js.map",
+    "static/js/2.195b4e0f.chunk.js": "/PTJ-90-Project/static/js/2.195b4e0f.chunk.js",
+    "static/js/2.195b4e0f.chunk.js.map": "/PTJ-90-Project/static/js/2.195b4e0f.chunk.js.map",
+    "static/js/3.37eab680.chunk.js": "/PTJ-90-Project/static/js/3.37eab680.chunk.js",
+    "static/js/3.37eab680.chunk.js.map": "/PTJ-90-Project/static/js/3.37eab680.chunk.js.map",
+    "index.html": "/PTJ-90-Project/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/PTJ-90-Project/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.195b4e0f.chunk.js.LICENSE.txt": "/PTJ-90-Project/static/js/2.195b4e0f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/PTJ-90-Project/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30abdf8d.js",
+    "static/js/2.195b4e0f.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.82e3b50f.chunk.js"
+  ]
+}
