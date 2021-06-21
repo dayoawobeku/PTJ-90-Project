@@ -121,4 +121,5 @@ html {
 
 .link-learn-more img {
   margin-left: 4px;
+  color: var(--text);
 }
