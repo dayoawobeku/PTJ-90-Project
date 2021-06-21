@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  margin-top: 12rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.fourth-section-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.fourth-section-container img {
+  max-width: 6.4rem;
+  max-height: 6.4rem;
+}
