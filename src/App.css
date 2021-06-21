@@ -49,6 +49,37 @@ html {
 }
 
 /* HERO SECTION */
-.link-learn-more {
+/* .link-learn-more {
   font-weight: 500;
+} */
+
+.hero-section-container {
+  display: flex;
+}
+
+.hero-section-text {
+  margin: 2rem 16rem;
+  margin-top: 16rem;
+  border: 1px solid red;
+}
+
+.hero-section-text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  max-width: 59rem;
+  max-height: 19.2rem;
+}
+
+.text-box {
+  background-color: #040b52;
+  color: #fff;
+}
+
+.hero-section-image {
+  max-width: 64rem;
+  max-height: 40rem;
+  margin-top: 12rem;
+  margin-left: 20rem;
+  border: 1px solid red;
 }
