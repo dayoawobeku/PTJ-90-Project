@@ -16,24 +16,23 @@ function HeroSection() {
               Let us help you secure your transactions. Our safe and transparent
               space will keep you protected from fraud.
             </p>
-            <Link
-              to="/get-started"
-              className="link get-started get-started-secondary"
-            >
-              Get Started
-            </Link>
-            <Link to="/learn-more" className="link link-learn-more">
-              Learn more{" "}
-              <span>
-                <img src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/3dbc49ebba08ef210a8cbdc4d187320287dc9b51/src/images/Arrow.svg" />
-              </span>
-            </Link>
-          </div>
 
-          <div>
+            <div className="hero-buttons">
+              <Link
+                to="/get-started"
+                className="link get-started get-started-secondary"
+              >
+                Get Started
+              </Link>
+              <Link to="/learn-more" className="link link-learn-more">
+                Learn more{" "}
+                <img src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/3dbc49ebba08ef210a8cbdc4d187320287dc9b51/src/images/Arrow.svg" />
+              </Link>
+            </div>
+          </div>
+          <div className="hero-image">
             <img
-              src="https://github.com/awobekuD/PTJ-90-Project/blob/main/src/images/Hero%20section%20image.png?raw=true"
-              alt="hero-section-image"
+              src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/e1c4ad755d0c567c64717810bd75c03be0e62015/src/images/Hero%20section%20image.svg"
               className="hero-section-image"
             />
           </div>
