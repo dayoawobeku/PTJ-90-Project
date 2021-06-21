@@ -58,6 +58,7 @@ html {
 /* HERO SECTION */
 .hero-section-container {
   display: flex;
+  height: 100vh;
 }
 
 .hero-section-text {
@@ -121,5 +122,64 @@ html {
 
 .link-learn-more img {
   margin-left: 4px;
+}
+
+/* SECOND SECTION */
+.second-section-parent {
+  background-color: #fafafa;
+}
+
+.second-section-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  padding-top: 16.5rem;
+}
+
+.second-container-text {
+  max-width: 54.8rem;
+}
+
+.second-container-text h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5rem;
   color: var(--text);
+  /* max-height: 156px; */
+}
+
+.second-container-text h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 1.6rem;
+}
+
+.second-container-text p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--text);
+  margin-top: 1.2rem;
+}
+
+.sub-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--btn-color);
+}
+
+.sub-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  max-width: 26rem;
+  margin-top: 2.4rem;
+}
+
+.sub-link img {
+  margin-left: 2px;
 }
