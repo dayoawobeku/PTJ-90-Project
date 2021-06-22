@@ -1,18 +1,32 @@
 .container {
   display: flex;
-  margin-top: 12rem;
-  margin-left: 16rem;
-  margin-right: 16rem;
+  margin: 12rem 16rem 0 16rem;
+  justify-content: center;
 }
 
 .fourth-section-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
+  /* border: 1px solid red; */
+  padding-right: 1rem;
 }
 
 .fourth-section-container img {
   max-width: 6.4rem;
   max-height: 6.4rem;
+}
+
+.fourth-section-container h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+.fourth-section-container p {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  max-width: 38rem;
 }
