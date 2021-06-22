@@ -6,6 +6,7 @@ import SecondSection from "./Second Section/SecondSection";
 import ThirdSection from "./Third Section/ThirdSection";
 import FourthSection from "./Fourth Section/Fourth-section";
 import FourthSectionButton from "./Fourth Section/FourthSectionButton";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <ThirdSection />
         <FourthSection />
         <FourthSectionButton />
+        <Footer />
 
         <Switch>
           <Route path="/" exact></Route>
