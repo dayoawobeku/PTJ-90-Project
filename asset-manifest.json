@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PTJ-90-Project/static/css/main.3eaf94b9.chunk.css",
-    "main.js": "/PTJ-90-Project/static/js/main.fbe0d450.chunk.js",
-    "main.js.map": "/PTJ-90-Project/static/js/main.fbe0d450.chunk.js.map",
+    "main.js": "/PTJ-90-Project/static/js/main.50402a5f.chunk.js",
+    "main.js.map": "/PTJ-90-Project/static/js/main.50402a5f.chunk.js.map",
     "runtime-main.js": "/PTJ-90-Project/static/js/runtime-main.ecd9ac08.js",
     "runtime-main.js.map": "/PTJ-90-Project/static/js/runtime-main.ecd9ac08.js.map",
     "static/js/2.97fff566.chunk.js": "/PTJ-90-Project/static/js/2.97fff566.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ecd9ac08.js",
     "static/js/2.97fff566.chunk.js",
     "static/css/main.3eaf94b9.chunk.css",
-    "static/js/main.fbe0d450.chunk.js"
+    "static/js/main.50402a5f.chunk.js"
   ]
 }
