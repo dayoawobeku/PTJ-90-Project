@@ -9,9 +9,12 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/PTJ-90-Project" exact>
             <Homepage />
           </Route>
+          {/* <Route path="/" exact>
+            <Homepage />
+          </Route> */}
           <Route path="/log-in" exact>
             <LogIn />
           </Route>
