@@ -1,6 +1,7 @@
 .hero-section-container {
   display: flex;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .hero-section-text {
