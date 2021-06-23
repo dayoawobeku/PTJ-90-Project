@@ -24,7 +24,7 @@ function LogIn() {
             </label>
             <input type="password" id="password" name="password" />
             <img
-              src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/75852d3203c16ecb8bad52c52946233f6c766cd7/src/images/Hide%20password%20icon.svg"
+              src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/a1eef24009b0f693647661a81b9ba4aa36b5e524/src/images/Show%20or%20Hide%20password.svg"
               alt="show/hide password"
               className="show-password-login-page"
             />

@@ -57,6 +57,10 @@
   position: relative;
 }
 
+.get-started-form p {
+  color: red;
+}
+
 input {
   border: 1px solid #dddde3;
   border-radius: 4px;
