@@ -27,7 +27,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/get-started" className="link get-started">
+              <Link to="/get-started" className="link get-started nav-fourth">
                 Get Started
               </Link>
             </li>
