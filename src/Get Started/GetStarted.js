@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./GetStarted.css";
+import useForm from "../Form Authentication/useForm";
+import validate from "../Form Authentication/validateInfo";
 
-function GetStarted() {
+const GetStarted = ({ submitForm }) => {
+  const { handleChange, handleSubmit, values, errors } = useForm(
+    submitForm,
+    validate
+  );
+
   return (
     <div className="overall-container-get-started">
       <img
@@ -18,45 +25,67 @@ function GetStarted() {
           <h4 className="business">Business</h4>
           <h4>Customer</h4>
         </div>
-        <form action="POST" className="get-started-form">
-          <label htmlFor="fname">Full Name</label>
-          <input type="text" id="fname" name="fname" />
+        <form className="get-started-form" onSubmit={handleSubmit}>
+          <label htmlFor="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            value={values.fullname}
+            onChange={handleChange}
+          />
+          {errors.fullname && <p>{errors.fullname}</p>}
 
           <label htmlFor="email" className="email">
             Email
           </label>
-          <input type="text" id="email" name="email" />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p>{errors.email}</p>}
 
           <label htmlFor="password" className="password">
             Password
           </label>
-          <input type="password" id="password" name="password" />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={values.password}
+            onChange={handleChange}
+          />
+          {errors.password && <p>{errors.password}</p>}
+
           <img
-            src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/75852d3203c16ecb8bad52c52946233f6c766cd7/src/images/Hide%20password%20icon.svg"
+            src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/a1eef24009b0f693647661a81b9ba4aa36b5e524/src/images/Show%20or%20Hide%20password.svg"
             alt="show/hide password"
             className="show-password"
           />
 
-          <p className="user-agreement">
+          <h5 className="user-agreement">
             By continuing, you agree to our{" "}
             <Link to="/user-agreement" className="user-agreement-link">
               <span className="text-blue">User Agreement</span> and{" "}
               <span className="text-blue">Privacy Policy</span>{" "}
             </Link>
-          </p>
-        </form>
-        <div className="actions">
-          <Link to="/get-started" className="get-started-button">
-            Create my account
-          </Link>
+          </h5>
+          <div className="actions">
+            <button type="submit" className="get-started-button">
+              Create my account
+            </button>
 
-          <Link to="/log-in" className="log-in">
-            Log In
-          </Link>
-        </div>
+            <Link to="/log-in" className="log-in">
+              Log In
+            </Link>
+          </div>
+        </form>
       </div>
     </div>
   );
-}
+};
 
 export default GetStarted;
