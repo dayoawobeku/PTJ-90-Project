@@ -1,0 +1,11 @@
+.btn-large-parent {
+  display: flex;
+  justify-content: center;
+  margin-right: 16rem;
+  margin-left: 16rem;
+}
+
+.btn-large {
+  margin-top: 4rem;
+  padding: 1.5rem 5.3rem;
+}
