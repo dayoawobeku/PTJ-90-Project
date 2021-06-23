@@ -33,3 +33,12 @@
   font-weight: 600;
   color: var(--btn-color);
 }
+
+.nav-fourth {
+  transition: 0.3s;
+}
+
+.nav-fourth:hover {
+  color: #fff;
+  background-color: var(--btn-color);
+}
