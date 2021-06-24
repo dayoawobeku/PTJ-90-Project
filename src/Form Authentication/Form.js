@@ -11,8 +11,9 @@ const Form = () => {
 
   return (
     <div>
-      <GetStarted />
       {!isSubmitted ? <GetStarted submitForm={submitForm} /> : <FormSuccess />}
     </div>
   );
 };
+
+export default Form;

@@ -12,11 +12,12 @@ const GetStarted = ({ submitForm }) => {
 
   return (
     <div className="overall-container-get-started">
-      <img
-        className="get-started-logo"
-        src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/6e1cf155e609208bf310e0bcacffa3a8641d2ae5/src/images/Get%20Started%20Logo.svg"
-        alt="escrow-logo"
-      />
+      <Link className="get-started-logo" alt="escrow-logo" to="/PTJ-90-Project">
+        <img
+          src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/6e1cf155e609208bf310e0bcacffa3a8641d2ae5/src/images/Get%20Started%20Logo.svg"
+          alt="escrow-logo"
+        />
+      </Link>
 
       <div className="get-started-container">
         <h2>Create your account</h2>
