@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./Homepage";
 import GetStarted from "./Get Started/GetStarted";
 import LogIn from "./Log In/LogIn";
+import UserDashboardGreetings from './User Dashboard Screens/UserDashboardGreetings'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/get-started" exact>
             <GetStarted />
           </Route>
+          <Route path='/user-dashboard' component={UserDashboardGreetings}/>
         </Switch>
       </Router>
     </>
