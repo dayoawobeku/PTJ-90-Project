@@ -6,11 +6,16 @@ function LogIn() {
   return (
     <div>
       <div className="overall-container">
-        <img
+        <Link
           className="get-started-logo"
-          src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/6e1cf155e609208bf310e0bcacffa3a8641d2ae5/src/images/Get%20Started%20Logo.svg"
           alt="escrow-logo"
-        />
+          to="/PTJ-90-Project"
+        >
+          <img
+            src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/6e1cf155e609208bf310e0bcacffa3a8641d2ae5/src/images/Get%20Started%20Logo.svg"
+            alt="escrow-logo"
+          />
+        </Link>
 
         <div className="get-started-container">
           <h2>Log In</h2>
