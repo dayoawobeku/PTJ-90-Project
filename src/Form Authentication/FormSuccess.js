@@ -16,7 +16,7 @@ const FormSuccess = () => {
         <img
           src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/dcd1f1f812f205f90edd4af98864cb9a96df8524/src/images/Form%20success.svg"
           alt="success-image"
-          className="form-success-img"
+          className="form-success"
         />
         <Link to="/log-in" className="proceed-login">
           Proceed to Log In
