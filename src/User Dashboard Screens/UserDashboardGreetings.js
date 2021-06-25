@@ -35,7 +35,7 @@ const UserDashboardGreetings = () => {
         <p className="purchase">
           Click the button below to make a purchase with Escrow
         </p>
-        <Link className="abs">Proceed</Link>
+        <Link>Proceed</Link>
       </div>
     </div>
   );
