@@ -1,9 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./Homepage";
-import GetStarted from "./Get Started/GetStarted";
 import LogIn from "./Log In/LogIn";
+
 import UserDashboardGreetings from './User Dashboard Screens/UserDashboardGreetings'
+=======
+import Form from "./Form Authentication/Form";
+
 
 function App() {
   return (
@@ -20,7 +23,7 @@ function App() {
             <LogIn />
           </Route>
           <Route path="/get-started" exact>
-            <GetStarted />
+            <Form />
           </Route>
           <Route path='/user-dashboard' component={UserDashboardGreetings}/>
         </Switch>

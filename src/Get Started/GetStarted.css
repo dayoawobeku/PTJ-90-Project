@@ -57,6 +57,12 @@
   position: relative;
 }
 
+.get-started-form p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
 input {
   border: 1px solid #dddde3;
   border-radius: 4px;
