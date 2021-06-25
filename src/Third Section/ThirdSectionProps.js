@@ -15,7 +15,7 @@ function ThirdSectionProps(props) {
             <p>{props.paragraph}</p>
             <Link to="/get-started" className="sub-link">
               {props.link}{" "}
-              <img src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/307adcc2a5d500d3a3a6dbf3603c8ef1bf186ba4/src/images/Arrow%20Second%20section.svg" />
+              <img src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/307adcc2a5d500d3a3a6dbf3603c8ef1bf186ba4/src/images/Arrow%20Second%20section.svg" alt=""/>
             </Link>
           </div>
         </div>
