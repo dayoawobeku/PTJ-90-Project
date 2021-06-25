@@ -8,9 +8,17 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
-            <img src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg" alt=''/>
+            <img
+              src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg"
+              alt=""
+            />
           </Link>
           <ul className="lis">
+            <li>
+              <Link to="/" className="link links home">
+                Home
+              </Link>
+            </li>
             <li>
               <Link to="/services" className="link links">
                 Services

@@ -1,39 +1,44 @@
-import React, {useState, useEffect} from 'react'
-import DashboardHeader from './DashboardHeader';
-import {Link} from 'react-router-dom';
-import './UserDashboard.css';
+import React, { useState, useEffect } from "react";
+import DashboardHeader from "./DashboardHeader";
+import { Link } from "react-router-dom";
+import "./UserDashboard.css";
 
 const UserDashboardGreetings = () => {
-    const [timeOfDay, setTimeOfDay] = useState(null);
+  const [timeOfDay, setTimeOfDay] = useState(null);
 
-    useEffect(()=> {
-        const today = new Date();
-        let time = today.getHours()
-        
-        if (time >= 0 && time <= 11){
-            setTimeOfDay('morning')
-        }else if (time >= 12 && time < 4) {
-            setTimeOfDay('afternoon')
-        } else{
-            setTimeOfDay('evening')
-        }
-        console.log(timeOfDay);
-    }, [timeOfDay])
-    return (
-        <div className='user-dashboard-g'>
-            <DashboardHeader />
-            <div className='customer'>  
-                <p className='cus'>Customer</p>
-                <p className='complete-prof'>Please complete your profile for a more personalized experience</p>
-            </div>
+  useEffect(() => {
+    const today = new Date();
+    let time = today.getHours();
 
-            <div className='g-text'>
-                <p className='greeting'>Good {timeOfDay} David,</p>
-                <p className='purchase'>Click the button below to make a purchase with Escrow</p>
-                <Link className='btn'>Proceed</Link>
-            </div>
-        </div>
-    )
-}
+    if (time >= 0 && time < 12) {
+      setTimeOfDay("morning");
+    } else if (time >= 12 && time < 16) {
+      setTimeOfDay("afternoon");
+    } else {
+      setTimeOfDay("evening");
+    }
+    console.log(timeOfDay);
+  }, [timeOfDay]);
 
-export default UserDashboardGreetings
+  return (
+    <div className="user-dashboard-g">
+      <DashboardHeader />
+      <div className="customer">
+        <p className="cus">Customer</p>
+        <p className="complete-prof">
+          Please complete your profile for a more personalized experience
+        </p>
+      </div>
+
+      <div className="g-text">
+        <p className="greeting">Good {timeOfDay} David,</p>
+        <p className="purchase">
+          Click the button below to make a purchase with Escrow
+        </p>
+        <Link>Proceed</Link>
+      </div>
+    </div>
+  );
+};
+
+export default UserDashboardGreetings;
