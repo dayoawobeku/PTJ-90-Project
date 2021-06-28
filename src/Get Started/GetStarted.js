@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./GetStarted.css";
-import useForm from "../Form Authentication/useForm";
-import validate from "../Form Authentication/validateInfo";
+import useForm from "../Form Authentication/UseForm";
+import validate from "../Form Authentication/ValidateInfo";
 
 function GetStarted() {
   const { handleChange, values, handleSubmit, errors } = useForm(validate);
