@@ -25,17 +25,19 @@ const UserDashboardGreetings = () => {
       <DashboardHeader />
       <div className="customer">
         <p className="cus">Customer</p>
-        <p className="complete-prof">
-          Please complete your profile for a more personalized experience
-        </p>
       </div>
+      <p className="complete-prof">
+        Please complete your profile for a more personalized experience
+      </p>
 
       <div className="g-text">
-        <p className="greeting">Good {timeOfDay} David,</p>
-        <p className="purchase">
-          Click the button below to make a purchase with Escrow
-        </p>
-        <Link to='#'>Proceed</Link>
+        <div className="hey">
+          <p className="greeting">Good {timeOfDay} David,</p>
+          <p className="purchase">
+            Click the button below to make a purchase with Escrow
+          </p>
+          <Link to="#">Proceed</Link>
+        </div>
       </div>
     </div>
   );

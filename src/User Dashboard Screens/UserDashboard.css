@@ -29,12 +29,11 @@
   text-decoration: none;
   font-weight: normal;
   font-size: 16px;
-  color: #0B1DD5;
+  color: #0b1dd5;
   display: block;
   transition: 0.3s;
 }
 /** Styles for smaller screen nav ends here */
-
 
 a {
   text-decoration: none;
@@ -85,7 +84,7 @@ a {
   align-items: center;
 }
 
-.customer .cus {
+.cus {
   padding: 0 0.8rem 0 0.8rem;
   line-height: 2.4rem;
   border: 1px solid var(--btn-color);
@@ -93,16 +92,20 @@ a {
   font-size: 1.2rem;
 }
 
-.customer .complete-prof {
+.complete-prof {
   font-weight: 600;
   text-align: center;
   font-size: 1.6rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-top: -2rem;
+  color: #0b1dd5;
 }
 
 .g-text {
   margin-top: 8rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .g-text .greeting {
