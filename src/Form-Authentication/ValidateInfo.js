@@ -1,5 +1,9 @@
-export default function validateLogin(values) {
+export default function validateInfo(values) {
   let errors = {};
+
+  if (!values.fullname) {
+    errors.fullname = "Fullname required";
+  }
 
   //   Email
   if (!values.email) {
