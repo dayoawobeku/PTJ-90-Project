@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 
 const useForm = (callback, validate) => {
@@ -24,13 +23,15 @@ const useForm = (callback, validate) => {
 
     setErrors(validate(values));
     setIsSubmitting(true);
+    console.log("anything", errors);
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
+      console.log(errors);
       callback();
     }
-  }, [errors]);
+  }, [errors, callback, isSubmitting]);
 
   return { handleChange, values, handleSubmit, errors };
 };

@@ -35,4 +35,5 @@
 .proceed-login {
   font-size: 1.4rem;
   color: var(--btn-color);
+  text-decoration: underline;
 }

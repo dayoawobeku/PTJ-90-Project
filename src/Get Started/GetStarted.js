@@ -23,8 +23,8 @@ const GetStarted = ({ submitForm }) => {
         <h2>Create your account</h2>
         <h3>Account Type</h3>
         <div className="options">
-          <h4 className="business">Business</h4>
-          <h4>Customer</h4>
+          <h4 className="customer-gs">Customer</h4>
+          <h4>Business</h4>
         </div>
         <form className="get-started-form" onSubmit={handleSubmit}>
           <label htmlFor="fullname">Full Name</label>
