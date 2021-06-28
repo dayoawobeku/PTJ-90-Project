@@ -5,6 +5,9 @@ import LogIn from "./Log In/LogIn";
 
 import UserDashboardGreetings from "./User Dashboard Screens/UserDashboardGreetings";
 import Form from "./Form Authentication/Form";
+//import UserDashboardLayout from "./User Dashboard Screens/UserDashboardLayout";
+import ProductDetails from "./User Dashboard Screens/ProductDetails";
+import Payment from "./User Dashboard Screens/Payment";
 
 function App() {
   return (
@@ -24,6 +27,8 @@ function App() {
             <Form />
           </Route>
           <Route path="/user-dashboard" component={UserDashboardGreetings} />
+          <Route path="/purchase-info" component={ProductDetails} />
+          <Route path="/payment" component={Payment} />
         </Switch>
       </Router>
     </>
