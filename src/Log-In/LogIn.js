@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./LogIn.css";
-import useForm from "../Form Authentication/UseForm";
+import useForm from "../Form-Authentication/UseForm";
 import validateLogin from "./ValidateLogin";
 
 const LogIn = ({ submitForm }) => {
