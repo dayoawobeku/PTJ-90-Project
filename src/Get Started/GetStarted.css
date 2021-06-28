@@ -44,7 +44,7 @@
   color: #767679;
 }
 
-.business {
+.customer-gs {
   border: 1px solid #0b1dd5;
   border-radius: 5rem;
   padding: 0.7rem 1.1rem;
@@ -121,6 +121,7 @@ label {
   color: #fff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .actions .log-in {
