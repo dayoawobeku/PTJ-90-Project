@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LogIn from "./LogIn";
 // import UserDashboardGreetings from "../User Dashboard Screens/UserDashboardGreetings";
-import { Route, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 const LoginForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);

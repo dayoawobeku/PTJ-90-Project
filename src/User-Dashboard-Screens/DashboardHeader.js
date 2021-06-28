@@ -61,10 +61,6 @@ const DashboardHeader = () => {
           <Link to="#">My Profile</Link>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 19732f6c743f066de7bac1486a5f48c60120236b
     </>
   );
 };
