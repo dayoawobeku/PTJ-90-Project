@@ -17,7 +17,16 @@ function LogIn() {
           />
         </Link>
 
-        <div className="get-started-container">
+        {/* for local 3000 */}
+        {/* <Link to="/">
+          <img
+            className="get-started-logo"
+            src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/6e1cf155e609208bf310e0bcacffa3a8641d2ae5/src/images/Get%20Started%20Logo.svg"
+            alt="escrow-logo"
+          />
+        </Link> */}
+
+        <div className="log-in-container">
           <h2>Log In</h2>
 
           <form action="POST" className="log-in-form">
@@ -41,10 +50,9 @@ function LogIn() {
             </p>
           </form>
           <div className="actions">
-            <Link to="/log-in" className="log-in-login-page">
+            <button type="submit" className="log-in-login-page">
               Log In
-            </Link>
-
+            </button>
             <Link to="/get-started" className="get-started-login-page">
               Sign Up
             </Link>

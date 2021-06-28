@@ -15,7 +15,11 @@ const FormSuccess = () => {
         <h2>You're all set!</h2>
         <img
           src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/dcd1f1f812f205f90edd4af98864cb9a96df8524/src/images/Form%20success.svg"
+<<<<<<< HEAD
           alt="success"
+=======
+          alt="success-image"
+>>>>>>> cef01c1... Pushed to master branch
           className="form-success-img"
         />
         <Link to="/log-in" className="proceed-login">
