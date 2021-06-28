@@ -24,10 +24,12 @@ const useForm = (callback, validate) => {
 
     setErrors(validate(values));
     setIsSubmitting(true);
+    console.log("anything", errors);
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
+      console.log(errors);
       callback();
     }
   }, [errors, callback, isSubmitting]);

@@ -25,10 +25,10 @@ const UserDashboardGreetings = () => {
       <DashboardHeader />
       <div className="customer">
         <p className="cus">Customer</p>
-        <p className="complete-prof">
-          Please complete your profile for a more personalized experience
-        </p>
       </div>
+      <p className="complete-prof">
+        Please complete your profile for a more personalized experience
+      </p>
 
       <div className="g-text">
         <p className="greeting">Good {timeOfDay} David,</p>
