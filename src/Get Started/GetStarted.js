@@ -4,20 +4,27 @@ import "./GetStarted.css";
 import useForm from "../Form Authentication/UseForm";
 import validate from "../Form Authentication/ValidateInfo";
 
-const GetStarted = ({ submitForm }) => {
-  const { handleChange, handleSubmit, values, errors } = useForm(
-    submitForm,
-    validate
-  );
+function GetStarted() {
+  const { handleChange, values, handleSubmit, errors } = useForm(validate);
 
   return (
     <div className="overall-container-get-started">
-      <Link className="get-started-logo" alt="escrow-logo" to="/PTJ-90-Project">
+      <Link to="/PTJ-90-Project">
         <img
+          className="get-started-logo"
           src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/6e1cf155e609208bf310e0bcacffa3a8641d2ae5/src/images/Get%20Started%20Logo.svg"
           alt="escrow-logo"
         />
       </Link>
+
+      {/* for local 3000 */}
+      {/* <Link to="/">
+        <img
+          className="get-started-logo"
+          src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/6e1cf155e609208bf310e0bcacffa3a8641d2ae5/src/images/Get%20Started%20Logo.svg"
+          alt="escrow-logo"
+        />
+      </Link> */}
 
       <div className="get-started-container">
         <h2>Create your account</h2>
@@ -26,7 +33,7 @@ const GetStarted = ({ submitForm }) => {
           <h4 className="customer-gs">Customer</h4>
           <h4>Business</h4>
         </div>
-        <form className="get-started-form" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="get-started-form">
           <label htmlFor="fullname">Full Name</label>
           <input
             type="text"
@@ -87,6 +94,6 @@ const GetStarted = ({ submitForm }) => {
       </div>
     </div>
   );
-};
+}
 
 export default GetStarted;

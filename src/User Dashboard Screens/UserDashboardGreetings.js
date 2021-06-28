@@ -31,13 +31,11 @@ const UserDashboardGreetings = () => {
       </p>
 
       <div className="g-text">
-        <div className="hey">
-          <p className="greeting">Good {timeOfDay} David,</p>
-          <p className="purchase">
-            Click the button below to make a purchase with Escrow
-          </p>
-          <Link to="#">Proceed</Link>
-        </div>
+        <p className="greeting">Good {timeOfDay} David,</p>
+        <p className="purchase">
+          Click the button below to make a purchase with Escrow
+        </p>
+        <Link to='#'>Proceed</Link>
       </div>
     </div>
   );
