@@ -6,7 +6,7 @@ function FourthSectionProps(props) {
     <>
       <div className="fourth-section">
         <div className="fourth-section-container">
-          <img src={props.image} />
+          <img src={props.image} alt=""/>
           <h3>{props.heading}</h3>
           <p>{props.paragraph}</p>
         </div>

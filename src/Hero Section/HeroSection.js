@@ -27,7 +27,7 @@ function HeroSection() {
               </Link>
               <Link to="/learn-more" className="link link-learn-more">
                 Learn more{" "}
-                <img src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/3dbc49ebba08ef210a8cbdc4d187320287dc9b51/src/images/Arrow.svg" />
+                <img src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/3dbc49ebba08ef210a8cbdc4d187320287dc9b51/src/images/Arrow.svg" alt=""/>
               </Link>
             </div>
           </div>
@@ -35,6 +35,7 @@ function HeroSection() {
             <img
               src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/e1c4ad755d0c567c64717810bd75c03be0e62015/src/images/Hero%20section%20image.svg"
               className="hero-section-image"
+              alt=""
             />
           </div>
         </div>

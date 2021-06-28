@@ -1,0 +1,283 @@
+/** Styles for smaller screen navbar **/
+.min-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.logo-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.min-nav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 40px;
+}
+.min-nav-content {
+  text-align: center;
+}
+.min-nav a {
+  padding: 8px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  color: #0B1DD5;
+  display: block;
+  transition: 0.3s;
+}
+/** Styles for smaller screen nav ends here */
+
+
+a {
+  text-decoration: none;
+}
+.user-dashboard-g {
+  padding: 2.4rem 16rem 0 16rem;
+  margin-bottom: 10rem;
+}
+
+.dashboard-nav {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6.4rem;
+}
+.ham {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dashboard-nav .nav-ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.dashboard-nav .nav-ul li a {
+  text-decoration: none;
+}
+
+.nav-link-primary {
+  color: #0b1dd5;
+}
+
+.nav-link-secondary {
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.li-4 {
+  margin-right: 4rem;
+}
+
+.customer {
+  color: var(--btn-color);
+  display: flex;
+  align-items: center;
+}
+
+.customer .cus {
+  padding: 0 0.8rem 0 0.8rem;
+  line-height: 2.4rem;
+  border: 1px solid var(--btn-color);
+  border-radius: 5rem;
+  font-size: 1.2rem;
+}
+
+.customer .complete-prof {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+.g-text {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.g-text .greeting {
+  font-weight: 500;
+  font-size: 4.8rem;
+  color: #040b52;
+}
+
+.g-text .purchase {
+  font-weight: normal;
+  font-size: 2.4rem;
+  color: #040b52;
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.g-text a {
+  text-decoration: none;
+  padding: 1.5rem 4.8rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  background-color: #0b1dd5;
+  color: #fff;
+}
+.radio-btn-form {
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 414px) {
+  .ham {
+    display: initial;
+  }
+
+  .dashboard-nav .nav-ul {
+    display: none;
+  }
+  .user-dashboard-g {
+    padding: 2.4rem 2rem 0 2rem;
+  }
+  .customer {
+    display: block;
+  }
+  .customer .cus {
+    padding: 0.2rem;
+    margin-bottom: 2.4rem;
+    width: 6.5rem;
+  }
+  .g-text .greeting {
+    font-size: 3rem;
+  }
+  .g-text .purchase {
+    font-size: 1.5rem;
+  }
+  .g-text a {
+    padding: 1rem 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+}
+
+/** Product Detail component styles **/
+.product-detail {
+  font-family: Inter;
+  padding: 2.4rem 16rem 0 16rem;
+}
+.product-d-box {
+  clear: both;
+  max-width: 447px;
+  margin: 48px auto;
+  padding: 48px;
+  background: #f0f2fe;
+  border-radius: 4px;
+}
+.product-d-box textarea {
+  width: 100%;
+  border: 1px solid rgba(11, 29, 213, 0.3);
+  background-color: inherit;
+}
+.product-d-box textarea:focus {
+  outline: none;
+}
+.p-q {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.p-q input[type="number"] {
+  width: 100%;
+  border-color: rgba(11, 29, 213, 0.3);
+  background-color: inherit;
+}
+
+.p-d-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #040b52;
+  padding-bottom: 30px;
+}
+form {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+form p {
+  padding-bottom: 5px;
+}
+.next-btn {
+  background: #0b1dd5;
+  border-radius: 4px;
+  padding: 7px 20px;
+  color: #fff;
+  border: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .product-detail {
+    padding: 2.4rem 2rem 0 2rem;
+  }
+  form {
+    margin-bottom: 6rem;
+  }
+  .product-d-box {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 48px 12px;
+    background: #f0f2fe;
+    border-radius: 4px;
+  }
+}
+
+/** Payment method styles **/
+
+input[type="radio"] {
+  height: 1rem;
+}
+.sc {
+  font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(4, 11, 82, 0.8);
+}
+.del-fee {
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 19px;
+  color: rgba(4, 11, 82, 0.8);
+}
+.total-fee {
+  background: #dde0fd;
+  border-radius: 4px;
+  color: #040b52;
+  margin-top: 19px;
+}
+.total-fee p {
+  padding: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.ad-q {
+  padding-top: 19px;
+  font-size: 14px;
+  color: #040b52;
+}
+.check-out-btn {
+  margin-top: 19px;
+  width: 100%;
+  background: #0b1dd5;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}

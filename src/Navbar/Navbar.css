@@ -4,7 +4,7 @@
 
 .navbar-container {
   display: flex;
-  padding: 2rem 16rem;
+  padding: 2.4rem 16rem;
   justify-content: center;
   align-items: center;
 }
@@ -19,11 +19,16 @@
   text-decoration: none;
   font-size: 1.6rem;
   color: var(--text);
+  opacity: 0.8;
   font-weight: 400;
 }
 
 .links {
   margin-right: 4rem;
+}
+
+.home {
+  color: var(--btn-color);
 }
 
 .get-started {
