@@ -1,14 +1,20 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./Homepage";
-import UserDashboardGreetings from "./User Dashboard Screens/UserDashboardGreetings";
-import Form from "./Form Authentication/Form";
+import UserDashboardGreetings from "./User-Dashboard-Screens/UserDashboardGreetings";
+import Form from "./Form-Authentication/Form";
 //import UserDashboardLayout from "./User Dashboard Screens/UserDashboardLayout";
+<<<<<<< HEAD
+import ProductDetails from "./User-Dashboard-Screens/ProductDetails";
+import Payment from "./User-Dashboard-Screens/Payment";
+import LoginForm from "./Log-In/LoginForm";
+=======
 import ProductDetails from "./User Dashboard Screens/ProductDetails";
 import Payment from "./User Dashboard Screens/Payment";
 
 import LoginForm from "./Log In/LoginForm";
 
+>>>>>>> 4c30283e3806651d53298735139635b9e40e58b6
 
 function App() {
   return (

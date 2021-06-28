@@ -61,7 +61,10 @@ const DashboardHeader = () => {
           <Link to="#">My Profile</Link>
         </div>
       </div>
+<<<<<<< HEAD:src/User-Dashboard-Screens/DashboardHeader.js
+=======
 
+>>>>>>> 4c30283e3806651d53298735139635b9e40e58b6:src/User Dashboard Screens/DashboardHeader.js
     </>
   );
 };

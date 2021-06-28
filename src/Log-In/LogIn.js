@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./LogIn.css";
-import useForm from "../Form Authentication/UseForm";
+import useForm from "../Form-Authentication/UseForm";
 import validateLogin from "./ValidateLogin";
 
 const LogIn = ({ submitForm }) => {
@@ -78,6 +78,9 @@ const LogIn = ({ submitForm }) => {
                 Sign Up
               </Link>
             </div>
+<<<<<<< HEAD:src/Log-In/LogIn.js
+          </form>
+=======
                <div className="actions">
                 <button type="submit" className="log-in-login-page">
                       Log In
@@ -90,6 +93,7 @@ const LogIn = ({ submitForm }) => {
 
           
 
+>>>>>>> 4c30283e3806651d53298735139635b9e40e58b6:src/Log In/LogIn.js
         </div>
       </div>
     </div>
