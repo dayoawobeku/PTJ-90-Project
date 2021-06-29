@@ -200,10 +200,6 @@ a {
   /* border: 1px solid red; */
 }
 
-.damn {
-  /* border: 2px solid red; */
-}
-
 .description {
   margin-bottom: 2.4rem;
 }
@@ -225,10 +221,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
-/* .hey label {
-  margin-top: 5rem;
-} */
 
 .price input {
   width: 14.7rem;
