@@ -4,17 +4,12 @@ import Homepage from "./Homepage";
 import UserDashboardGreetings from "./User-Dashboard-Screens/UserDashboardGreetings";
 import Form from "./Form-Authentication/Form";
 //import UserDashboardLayout from "./User Dashboard Screens/UserDashboardLayout";
-<<<<<<< HEAD
+
 import ProductDetails from "./User-Dashboard-Screens/ProductDetails";
 import Payment from "./User-Dashboard-Screens/Payment";
 import LoginForm from "./Log-In/LoginForm";
-=======
-import ProductDetails from "./User Dashboard Screens/ProductDetails";
-import Payment from "./User Dashboard Screens/Payment";
+import SellerDetails from "./User-Dashboard-Screens/SellerDetails";
 
-import LoginForm from "./Log In/LoginForm";
-
->>>>>>> 4c30283e3806651d53298735139635b9e40e58b6
 
 function App() {
   return (
@@ -37,8 +32,9 @@ function App() {
 
           <Route path="/user-dashboard" component={UserDashboardGreetings} />
 
-          <Route path="/purchase-info" component={ProductDetails} />
+          <Route path="/product-details" component={ProductDetails} />
           <Route path="/payment" component={Payment} />
+          <Route path="/seller-details" component={SellerDetails} />
         </Switch>
       </Router>
     </>

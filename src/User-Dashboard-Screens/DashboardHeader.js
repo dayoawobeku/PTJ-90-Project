@@ -13,7 +13,8 @@ const DashboardHeader = () => {
 
   return (
     <>
-      <nav className="dashboard-nav">
+      <div className="main-container">
+        <nav className="dashboard-nav">
         <Link className="navbar-brand" to="/PTJ-90-Project">
           <img
             src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg"
@@ -50,6 +51,19 @@ const DashboardHeader = () => {
               alt=""
             />
           </Link>
+
+            <span className="closebtn" onClick={closeNav}>
+              &times;
+            </span>
+          </div>
+
+          <div className="min-nav-content">
+            <Link to="/PTJ-90-Project">Home</Link>
+            <Link to="#">My Transactions</Link>
+            <Link to="#">My Profile</Link>
+          </div>
+        </div>
+      </div>
           <span className="closebtn" onClick={closeNav}>
             &times;
           </span>
@@ -61,10 +75,6 @@ const DashboardHeader = () => {
           <Link to="#">My Profile</Link>
         </div>
       </div>
-<<<<<<< HEAD:src/User-Dashboard-Screens/DashboardHeader.js
-=======
-
->>>>>>> 4c30283e3806651d53298735139635b9e40e58b6:src/User Dashboard Screens/DashboardHeader.js
     </>
   );
 };

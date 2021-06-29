@@ -23,29 +23,18 @@ const UserDashboardGreetings = () => {
   return (
     <div className="user-dashboard-g">
       <DashboardHeader />
-      <div className="customer">
-        <p className="cus">Customer</p>
-      </div>
       <p className="complete-prof">
         Please complete your profile for a more personalized experience
       </p>
 
       <div className="g-text">
-<<<<<<< HEAD:src/User-Dashboard-Screens/UserDashboardGreetings.js
-        <div className="hey">
+        <div>
           <p className="greeting">Good {timeOfDay} David,</p>
           <p className="purchase">
             Click the button below to make a purchase with Escrow
           </p>
-          <Link to="#">Proceed</Link>
+          <Link to="/seller-details">Proceed</Link>
         </div>
-=======
-        <p className="greeting">Good {timeOfDay} David,</p>
-        <p className="purchase">
-          Click the button below to make a purchase with Escrow
-        </p>
-        <Link to='#'>Proceed</Link>
->>>>>>> 4c30283e3806651d53298735139635b9e40e58b6:src/User Dashboard Screens/UserDashboardGreetings.js
       </div>
     </div>
   );

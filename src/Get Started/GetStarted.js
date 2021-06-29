@@ -37,7 +37,9 @@ function GetStarted({ submitForm }) {
           <h4>Business</h4>
         </div>
         <form onSubmit={handleSubmit} className="get-started-form">
-          <label htmlFor="fullname">Full Name</label>
+          <label htmlFor="fullname" className="get-started-labels">
+            Full Name
+          </label>
           <input
             type="text"
             id="fullname"
@@ -47,7 +49,7 @@ function GetStarted({ submitForm }) {
           />
           {errors.fullname && <p>{errors.fullname}</p>}
 
-          <label htmlFor="email" className="email">
+          <label htmlFor="email" className="get-started-labels email">
             Email
           </label>
           <input
@@ -59,9 +61,10 @@ function GetStarted({ submitForm }) {
           />
           {errors.email && <p>{errors.email}</p>}
 
-          <label htmlFor="password" className="password">
+          <label htmlFor="password" className="get-started-labels password">
             Password
           </label>
+
           <input
             type="password"
             id="password"
