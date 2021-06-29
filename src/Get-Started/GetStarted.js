@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./GetStarted.css";
-import useForm from "../Form-Authentication/UseForm";
+import useForm from "../Form-Authentication/useForm";
 import validate from "../Form-Authentication/ValidateInfo";
 
 function GetStarted({ submitForm }) {
