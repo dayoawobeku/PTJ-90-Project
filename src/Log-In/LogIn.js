@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./LogIn.css";
-import useForm from "../Form-Authentication/UseForm";
+import useForm from "../Form-Authentication/useForm";
 import validateLogin from "./ValidateLogin";
 
 const LogIn = ({ submitForm }) => {
@@ -37,7 +37,6 @@ const LogIn = ({ submitForm }) => {
           <h2>Log In</h2>
 
           <form className="log-in-form" onSubmit={handleSubmit}>
-
             <label htmlFor="email" className="labels-login-page login-label">
               Email
             </label>
