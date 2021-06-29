@@ -23,7 +23,6 @@ const UserDashboardGreetings = () => {
   return (
     <div className="user-dashboard-g">
       <DashboardHeader />
-
       <p className="complete-prof">
         Please complete your profile for a more personalized experience
       </p>

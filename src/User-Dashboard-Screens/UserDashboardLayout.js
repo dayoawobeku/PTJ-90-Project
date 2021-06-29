@@ -14,6 +14,5 @@ const UserDashboardLayout = ({ children }) => {
 
 UserDashboardLayout.propTypes = {
   children: propTypes.arrayOf(propTypes.element).isRequired,
-};
 
 export default UserDashboardLayout;

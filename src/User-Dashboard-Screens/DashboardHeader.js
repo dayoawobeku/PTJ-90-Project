@@ -15,45 +15,43 @@ const DashboardHeader = () => {
     <>
       <div className="main-container">
         <nav className="dashboard-nav">
+        <Link className="navbar-brand" to="/PTJ-90-Project">
+          <img
+            src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg"
+            alt=""
+          />
+        </Link>
+        <ul className="nav-ul">
+          <li className="li-4">
+            <Link to="/PTJ-90-Project" className="nav-link-primary">
+              Home
+            </Link>
+          </li>
+          <li className="li-4 ">
+            <Link to="" className="nav-link-secondary">
+              My Transactions
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="nav-link-secondary">
+              My Profile
+            </Link>
+          </li>
+        </ul>
+        <span className="ham" onClick={openNav}>
+          &#9776;
+        </span>
+      </nav>
+
+      <div className="min-nav">
+        <div className="logo-div">
           <Link className="navbar-brand" to="/PTJ-90-Project">
             <img
               src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg"
               alt=""
             />
           </Link>
-          <ul className="nav-ul">
-            <li className="li-4">
-              <Link to="/PTJ-90-Project" className="nav-link-primary">
-                Home
-              </Link>
-            </li>
-            <li className="li-4 ">
-              <Link to="" className="nav-link-secondary">
-                My Transactions
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="nav-link-secondary">
-                My Profile
-              </Link>
-            </li>
-          </ul>
-          <span className="ham" onClick={openNav}>
-            &#9776;
-          </span>
-        </nav>
-        <div className="customer">
-          <p className="cus">Customer</p>
-        </div>
 
-        <div className="min-nav">
-          <div className="logo-div">
-            <Link className="navbar-brand" to="/PTJ-90-Project">
-              <img
-                src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg"
-                alt=""
-              />
-            </Link>
             <span className="closebtn" onClick={closeNav}>
               &times;
             </span>
@@ -64,6 +62,17 @@ const DashboardHeader = () => {
             <Link to="#">My Transactions</Link>
             <Link to="#">My Profile</Link>
           </div>
+        </div>
+      </div>
+          <span className="closebtn" onClick={closeNav}>
+            &times;
+          </span>
+        </div>
+
+        <div className="min-nav-content">
+          <Link to="/PTJ-90-Project">Home</Link>
+          <Link to="#">My Transactions</Link>
+          <Link to="#">My Profile</Link>
         </div>
       </div>
     </>
