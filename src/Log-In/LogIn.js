@@ -37,9 +37,11 @@ const LogIn = ({ submitForm }) => {
           <h2>Log In</h2>
 
           <form className="log-in-form" onSubmit={handleSubmit}>
+
             <label htmlFor="email" className="labels-login-page login-label">
               Email
             </label>
+
             <input
               type="text"
               id="email"
