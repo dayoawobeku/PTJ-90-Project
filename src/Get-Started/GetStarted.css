@@ -1,6 +1,6 @@
-.overall-container {
+.overall-container-get-started {
   background-color: var(--text);
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,9 +13,9 @@
   margin-top: 5.6rem;
 }
 
-.log-in-container {
+.get-started-container {
   background-color: #fff;
-  padding: 3.2rem 8.5rem 4rem 6.4rem;
+  padding: 3.2rem 5.6rem 4rem 6.4rem;
   border-radius: 4px;
   color: var(--text);
 }
@@ -25,11 +25,42 @@
   font-weight: 700;
 }
 
-.log-in-form {
+.get-started-container h3 {
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.options h4 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #767679;
+}
+
+.customer-gs {
+  border: 1px solid #0b1dd5;
+  border-radius: 5rem;
+  padding: 0.7rem 1.1rem;
+}
+
+.get-started-form {
   display: flex;
   flex-direction: column;
-  position: relative;
   margin-top: 4rem;
+  position: relative;
+}
+
+.get-started-form p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
 }
 
 input {
@@ -40,35 +71,34 @@ input {
   padding-left: 1rem;
 }
 
-input:focus {
-  outline: none !important;
-  border: 1px solid rgba(4, 11, 82, 0.5);
-}
-
 label {
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
 
-.show-password-login-page {
+.email,
+.password {
+  margin-top: 2.4rem;
+}
+
+.show-password {
   position: absolute;
   max-height: 2.4rem;
   max-width: 2.4rem;
   left: 26rem;
-  top: 12.1rem;
+  top: 21rem;
 }
 
-.forgot-password {
-  margin-top: 0.8rem;
-  text-align: right;
+.user-agreement {
+  margin-top: 4.8rem;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.9rem;
   max-width: 32.6rem;
 }
 
-.forgot-password-link {
+.user-agreement-link {
   text-decoration: none;
 }
 
@@ -83,18 +113,18 @@ label {
   gap: 2.4rem;
 }
 
-.log-in-login-page {
+.get-started-button {
   font-size: 1.4rem;
   font-weight: 600;
   padding: 1.4rem 3.1rem;
   background: #0b1dd5;
-  text-decoration: none;
   color: #fff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.actions .get-started-login-page {
+.actions .log-in {
   font-size: 1.4rem;
   font-weight: 400;
   color: #0b1dd5;

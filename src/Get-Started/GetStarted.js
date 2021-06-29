@@ -30,8 +30,8 @@ function GetStarted() {
         <h2>Create your account</h2>
         <h3>Account Type</h3>
         <div className="options">
-          <h4 className="business">Business</h4>
-          <h4>Customer</h4>
+          <h4 className="customer-gs">Customer</h4>
+          <h4>Business</h4>
         </div>
         <form onSubmit={handleSubmit} className="get-started-form">
           <label htmlFor="fullname">Full Name</label>
@@ -44,7 +44,7 @@ function GetStarted() {
           />
           {errors.fullname && <p>{errors.fullname}</p>}
 
-          <label htmlFor="email" className="email">
+          <label htmlFor="email" className="get-started-labels email">
             Email
           </label>
           <input
@@ -56,9 +56,10 @@ function GetStarted() {
           />
           {errors.email && <p>{errors.email}</p>}
 
-          <label htmlFor="password" className="password">
+          <label htmlFor="password" className="get-started-labels password">
             Password
           </label>
+
           <input
             type="password"
             id="password"

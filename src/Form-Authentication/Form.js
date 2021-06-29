@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GetStarted from "../Get Started/GetStarted";
+import GetStarted from "../Get-Started/GetStarted";
 import FormSuccess from "./FormSuccess";
 
 const Form = () => {
