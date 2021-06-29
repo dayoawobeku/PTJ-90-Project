@@ -7,6 +7,7 @@ import Form from "./Form-Authentication/Form";
 import ProductDetails from "./User-Dashboard-Screens/ProductDetails";
 import Payment from "./User-Dashboard-Screens/Payment";
 import LoginForm from "./Log-In/LoginForm";
+import SellerDetails from "./User-Dashboard-Screens/SellerDetails";
 
 function App() {
   return (
@@ -29,8 +30,9 @@ function App() {
 
           <Route path="/user-dashboard" component={UserDashboardGreetings} />
 
-          <Route path="/purchase-info" component={ProductDetails} />
+          <Route path="/product-details" component={ProductDetails} />
           <Route path="/payment" component={Payment} />
+          <Route path="/seller-details" component={SellerDetails} />
         </Switch>
       </Router>
     </>

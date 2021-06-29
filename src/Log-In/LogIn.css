@@ -20,7 +20,7 @@
   color: var(--text);
 }
 
-.get-started-container h2 {
+.log-in-container h2 {
   font-size: 2.4rem;
   font-weight: 700;
 }
@@ -51,8 +51,8 @@ input:focus {
   border: 1px solid rgba(4, 11, 82, 0.5);
 }
 
-label {
-  font-size: 1.4rem;
+.log-in-form .label-login-page {
+  font-size: 4.4rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
 }

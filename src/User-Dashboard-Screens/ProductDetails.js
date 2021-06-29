@@ -1,30 +1,41 @@
-import React from 'react';
-import UserDashboardLayout from './UserDashboardLayout';
-import { Link } from 'react-router-dom';
+import React from "react";
+import UserDashboardLayout from "./UserDashboardLayout";
+import { Link } from "react-router-dom";
 
 const ProductDetails = () => {
-    return (
-        <UserDashboardLayout>
-            <header className='p-d-header'>Product's Detail</header>
-            <form>
-                <p>Brief Description:</p>
-                <textarea name="description" rows='5' cols='50'></textarea>
+  return (
+    <UserDashboardLayout>
+      <form className="product-details-form">
+        <div className="damn">
+          <h2 className="p-d-header">Product Details</h2>
+          <div className="p-q">
+            <div className="description product-details-labels">
+              <label htmlFor="description">Description</label>
+              <input type="text" required name="description" className="desc" />
+            </div>
 
-                <div className='p-q'>
-                    <div className='price'> 
-                        <p>Price:</p>
-                        <input type="number" min="1" step="any" />
-                    </div>
-                    <div className='qty'>
-                        <p>Quantity:</p>
-                        <input type="number" name="quantity" min="1" max="10"></input>
-                    </div>
-                </div>
-            </form>
-            <Link to='/payment' className='next-btn'>Next</Link>
-            
-        </UserDashboardLayout>
-    )
-}
+            <div className="price-and-qty">
+              <div className="price product-details-labels">
+                <label htmlFor="price">Price</label>
+                <input type="number" min="1000" step="100" />
+              </div>
 
-export default ProductDetails
+              <div className="qty product-details-labels">
+                <label htmlFor="quantity">Quantity</label>
+                <input type="number" name="quantity" min="1" max="10" />
+              </div>
+            </div>
+
+            <div className="action">
+              <Link to="/payment" className="next-btn">
+                Next
+              </Link>
+            </div>
+          </div>
+        </div>
+      </form>
+    </UserDashboardLayout>
+  );
+};
+
+export default ProductDetails;

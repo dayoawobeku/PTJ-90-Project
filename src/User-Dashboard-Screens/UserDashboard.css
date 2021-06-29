@@ -39,8 +39,11 @@ a {
   text-decoration: none;
 }
 .user-dashboard-g {
-  padding: 2.4rem 16rem 0 16rem;
   margin-bottom: 10rem;
+}
+
+.main-container {
+  padding: 2.4rem 16rem 0 16rem;
 }
 
 .dashboard-nav {
@@ -50,6 +53,7 @@ a {
   align-items: center;
   padding-bottom: 6.4rem;
 }
+
 .ham {
   display: none;
   font-size: 30px;
@@ -131,9 +135,9 @@ a {
   background-color: #0b1dd5;
   color: #fff;
 }
-.radio-btn-form {
+/* .radio-btn-form {
   border: 1px solid red;
-}
+} */
 
 @media only screen and (max-width: 414px) {
   .ham {
@@ -168,73 +172,117 @@ a {
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
 }
 
-/** Product Detail component styles **/
-.product-detail {
-  font-family: Inter;
-  padding: 2.4rem 16rem 0 16rem;
-}
 .product-d-box {
-  clear: both;
+  /* clear: both; */
   max-width: 447px;
   margin: 48px auto;
-  padding: 48px;
+  padding: 4.8rem 8.5rem 8.5rem 6.4rem;
   background: #f0f2fe;
   border-radius: 4px;
 }
-.product-d-box textarea {
+
+.product-d-box label {
   width: 100%;
-  border: 1px solid rgba(11, 29, 213, 0.3);
+  /* border: 5px solid rgba(11, 29, 213, 0.3); */
   background-color: inherit;
-}
-.product-d-box textarea:focus {
-  outline: none;
-}
-.p-q {
-  padding-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-.p-q input[type="number"] {
-  width: 100%;
-  border-color: rgba(11, 29, 213, 0.3);
-  background-color: inherit;
+  /* padding-bottom: 0.8rem; */
 }
 
-.p-d-header {
+.p-q {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details-labels {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.damn {
+  /* border: 2px solid red; */
+}
+
+.description {
+  margin-bottom: 2.4rem;
+}
+
+.desc {
+  background-color: #f0f2fe;
+  border: 1px solid rgba(11, 29, 213, 0.3);
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.p-q input[type="number"] {
+  border-color: rgba(11, 29, 213, 0.3);
+  background-color: inherit;
+  /* width: 100%; */
+}
+
+.price-and-qty {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .hey label {
+  margin-top: 5rem;
+} */
+
+.price input {
+  width: 14.7rem;
+}
+
+.qty input {
+  width: 12.7rem;
+}
+
+.p-d-h2 {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   color: #040b52;
   padding-bottom: 30px;
 }
-form {
+
+/* form {
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 17px;
-}
-form p {
-  padding-bottom: 5px;
-}
+} */
+
+/* form p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(4, 11, 82, 0.8);
+} */
+
 .next-btn {
+  /* border: 4px solid red; */
   background: #0b1dd5;
   border-radius: 4px;
-  padding: 7px 20px;
+  padding: 1.4rem 3.8rem;
   color: #fff;
-  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 414px) {
   .product-detail {
     padding: 2.4rem 2rem 0 2rem;
   }
+
   form {
     margin-bottom: 6rem;
   }
+
   .product-d-box {
     max-width: 100%;
     margin: 10px auto;
-    padding: 48px 12px;
+    padding: 4.8rem;
     background: #f0f2fe;
     border-radius: 4px;
   }
@@ -243,26 +291,37 @@ form p {
 /** Payment method styles **/
 
 input[type="radio"] {
-  height: 1rem;
+  height: 1.2rem;
+  margin-left: -14.2rem;
 }
+
+.payment-label {
+  margin-left: -13.2rem;
+  font-size: 1.3rem;
+}
+
 .sc {
   font-weight: 600;
   font-size: 14px;
   font-weight: 600;
   color: rgba(4, 11, 82, 0.8);
 }
+
 .del-fee {
   font-weight: bold;
   font-size: 16px;
   padding-top: 19px;
   color: rgba(4, 11, 82, 0.8);
 }
+
 .total-fee {
   background: #dde0fd;
   border-radius: 4px;
   color: #040b52;
   margin-top: 19px;
+  max-width: 35.6rem;
 }
+
 .total-fee p {
   padding: 12px;
   font-size: 20px;
