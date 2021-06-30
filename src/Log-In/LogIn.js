@@ -34,7 +34,7 @@ const LogIn = ({ submitForm }) => {
         </Link> */}
 
         <div className="log-in-container">
-          <h2>Log In</h2>
+          <h2>Log In to your account</h2>
 
           <form className="log-in-form" onSubmit={handleSubmit}>
             <label htmlFor="email" className="labels-login-page login-label">
