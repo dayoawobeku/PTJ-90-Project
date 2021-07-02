@@ -46,6 +46,7 @@ function GetStarted({ submitForm }) {
             name="fullname"
             value={values.fullname}
             onChange={handleChange}
+            placeholder="David Oluwatosin"
           />
           {errors.fullname && <p>{errors.fullname}</p>}
 
@@ -58,6 +59,7 @@ function GetStarted({ submitForm }) {
             name="email"
             value={values.email}
             onChange={handleChange}
+            placeholder="davidoluwatosin@gmail.com"
           />
           {errors.email && <p>{errors.email}</p>}
 
@@ -71,6 +73,7 @@ function GetStarted({ submitForm }) {
             name="password"
             value={values.password}
             onChange={handleChange}
+            placeholder="*********"
           />
           {errors.password && <p>{errors.password}</p>}
 
