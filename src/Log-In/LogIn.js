@@ -47,6 +47,7 @@ const LogIn = ({ submitForm }) => {
               name="email"
               value={values.email}
               onChange={handleChange}
+              placeholder="davidoluwatosin@gmail.com"
             />
             {errors.email && <p>{errors.email}</p>}
 
@@ -59,6 +60,7 @@ const LogIn = ({ submitForm }) => {
               name="password"
               value={values.password}
               onChange={handleChange}
+              placeholder="*********"
             />
             {errors.password && <p>{errors.password}</p>}
 
