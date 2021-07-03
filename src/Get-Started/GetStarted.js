@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./GetStarted.css";
 import useForm from "../Form-Authentication/useForm";
@@ -9,6 +9,13 @@ function GetStarted({ submitForm }) {
     submitForm,
     validate
   );
+
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePasswordVisibility = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
+
+  console.log(passwordShown);
 
   return (
     <div className="overall-container-get-started">
@@ -36,6 +43,7 @@ function GetStarted({ submitForm }) {
           <h4 className="customer-gs">Customer</h4>
           <h4>Business</h4>
         </div>
+
         <form onSubmit={handleSubmit} className="get-started-form">
           <label htmlFor="fullname" className="get-started-labels">
             Full Name
@@ -49,7 +57,6 @@ function GetStarted({ submitForm }) {
             placeholder="David Oluwatosin"
           />
           {errors.fullname && <p>{errors.fullname}</p>}
-
           <label htmlFor="email" className="get-started-labels email">
             Email
           </label>
@@ -62,27 +69,28 @@ function GetStarted({ submitForm }) {
             placeholder="davidoluwatosin@gmail.com"
           />
           {errors.email && <p>{errors.email}</p>}
-
           <label htmlFor="password" className="get-started-labels password">
             Password
           </label>
-
           <input
-            type="password"
+            type={passwordShown ? "text" : "password"}
             id="password"
             name="password"
             value={values.password}
             onChange={handleChange}
             placeholder="*********"
-          />
+          <div className="password-show">
+            <i
+              onClick={togglePasswordVisibility}
+              className={`${
+                passwordShown
+                  ? "im im-eye-off password-show-image"
+                  : "im im-eye password-show-image"
+              }`}
+            ></i>
+          </div>
+
           {errors.password && <p>{errors.password}</p>}
-
-          <img
-            src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/a1eef24009b0f693647661a81b9ba4aa36b5e524/src/images/Show%20or%20Hide%20password.svg"
-            alt="show/hide password"
-            className="show-password"
-          />
-
           <h5 className="user-agreement">
             By continuing, you agree to our{" "}
             <Link to="/user-agreement" className="user-agreement-link">
