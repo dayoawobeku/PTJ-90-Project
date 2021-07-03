@@ -69,6 +69,7 @@ function GetStarted({ submitForm }) {
             placeholder="davidoluwatosin@gmail.com"
           />
           {errors.email && <p>{errors.email}</p>}
+
           <label htmlFor="password" className="get-started-labels password">
             Password
           </label>
