@@ -82,12 +82,17 @@ label {
   margin-top: 2.4rem;
 }
 
-.show-password {
+.password-show {
+  position: relative;
+}
+
+.password-show-image {
+  color: #040b52;
+  opacity: 0.5;
+  font-size: 18px;
   position: absolute;
-  max-height: 2.4rem;
-  max-width: 2.4rem;
-  left: 26rem;
-  top: 21rem;
+  left: 26.5rem;
+  bottom: 1.1rem;
 }
 
 .user-agreement {
