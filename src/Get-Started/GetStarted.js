@@ -79,9 +79,6 @@ function GetStarted({ submitForm }) {
             value={values.password}
             onChange={handleChange}
             placeholder="*********"
-            // placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
-          />
-
           <div className="password-show">
             <i
               onClick={togglePasswordVisibility}
