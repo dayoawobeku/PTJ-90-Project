@@ -10,9 +10,9 @@
 }
 
 .lis {
+  display: flex;
   margin-left: auto;
   list-style: none;
-  display: flex;
 }
 
 .link {
@@ -46,4 +46,105 @@
 .nav-fourth:hover {
   color: #fff;
   background-color: var(--btn-color);
+}
+
+.btn-mobile {
+  display: none;
+  border: none;
+  background-color: #fff;
+  color: var(--text);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar-container {
+    padding: 2.4rem 14rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-container {
+    padding: 2.4rem 8rem;
+  }
+
+  .links {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .navbar {
+    box-shadow: none;
+    background-color: #fafbff;
+    padding-bottom: 2.4rem;
+  }
+
+  .navbar-logo {
+    display: flex;
+    position: absolute;
+    top: 2.4rem;
+    left: 8rem;
+  }
+
+  .links {
+    margin-right: 0rem;
+  }
+
+  .lis {
+    display: none;
+  }
+
+  .nav-lis-mobile {
+    position: absolute;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    top: 7rem;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    background-color: #fafbff;
+    z-index: 1;
+    padding-bottom: 3.6rem;
+  }
+
+  .nav-fourth {
+    padding: 1rem 1.2rem;
+    align-self: center;
+  }
+
+  .home {
+    margin-top: 0;
+  }
+
+  .btn-mobile {
+    display: block;
+    position: absolute;
+    font-size: 24px;
+    top: 2.8rem;
+    right: 8rem;
+    outline: none;
+    background-color: #fafbff;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-logo {
+    width: 10.8rem;
+    height: 3.3rem;
+    display: flex;
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+  }
+
+  .btn-mobile {
+    display: block;
+    position: absolute;
+    font-size: 24px;
+    top: 2.8rem;
+    right: 2.4rem;
+  }
 }
