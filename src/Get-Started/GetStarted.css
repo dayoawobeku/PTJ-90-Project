@@ -135,3 +135,48 @@ label {
   color: #0b1dd5;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 500px) {
+  .get-started-container {
+    width: 87.2vw;
+    padding: 3.2rem 2.3rem 5.4rem 2.3rem;
+  }
+
+  .get-started-container h2 {
+    margin-bottom: 3.2rem !important;
+  }
+
+  .get-started-container h3 {
+    margin-top: 0rem;
+  }
+
+  .get-started-form {
+    margin-bottom: 0;
+  }
+
+  input {
+    width: 74.9vw !important;
+  }
+
+  .get-started-button {
+    padding: 1.4rem 2.5rem;
+  }
+
+  .password-show-image {
+    left: 90%;
+  }
+}
+
+@media only screen and (max-width: 331px) {
+  .get-started-container h2 {
+    font-size: 2rem;
+  }
+
+  .get-started-button {
+    padding: 1.2rem 1.8rem;
+  }
+
+  .user-agreement {
+    font-size: 1.3rem;
+  }
+}
