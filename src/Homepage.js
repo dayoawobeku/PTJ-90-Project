@@ -13,7 +13,7 @@ function Homepage() {
   return (
     <div>
       <Navbar />
-      <HeroSection />
+      {/* <HeroSection /> */}
       <SecondSection />
       <ThirdSection />
       <FourthSection />

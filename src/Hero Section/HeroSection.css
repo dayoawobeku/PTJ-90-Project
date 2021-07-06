@@ -68,6 +68,8 @@
   display: none;
 }
 
+/* MEDIA QUERIES (max-width - 1280px, 1100px, 990px, 900px, 780px, 720px, 700px 480px) */
+
 @media screen and (max-width: 1280px) {
   .hero-section-image {
     max-width: 62rem;
