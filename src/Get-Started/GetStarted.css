@@ -154,8 +154,8 @@ label {
     margin-bottom: 0;
   }
 
-  input {
-    width: 74.9vw !important;
+  .get-started-input {
+    width: 74.9vw;
   }
 
   .get-started-button {
