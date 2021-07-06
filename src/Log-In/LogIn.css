@@ -111,3 +111,36 @@ input:focus {
   color: #0b1dd5;
   text-decoration: none;
 }
+
+@media only screen and (max-width:520px) {
+    .log-in-container {
+      width: 87.2vw;
+      padding: 3.2rem 2.3rem 0rem;
+    }
+    
+    input {
+      width: 74.9vw;
+    }
+    
+    .forgot-password {
+      margin-top: 1.6rem!important;
+    }
+    }
+    
+    @media only screen and (width:414px) {
+      .forgot-password {
+        padding-right: 0.5rem;
+      }
+    }
+    
+    @media only screen and (width:411px) {
+      .forgot-password {
+        padding-right: 0.5rem;
+      }
+    }
+    
+    @media only screen and (max-width:320px) {
+      .overall-container {
+        height: 120vh;
+      }
+    }
