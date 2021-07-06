@@ -51,6 +51,7 @@ const LogIn = ({ submitForm }) => {
             <input
               type="text"
               id="email"
+              className="log-in-input"
               name="email"
               value={values.email}
               onChange={handleChange}
@@ -64,6 +65,7 @@ const LogIn = ({ submitForm }) => {
             <input
               type={passwordShown ? "text" : "password"}
               id="password"
+              className="log-in-input"
               name="password"
               value={values.password}
               onChange={handleChange}

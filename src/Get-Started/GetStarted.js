@@ -51,6 +51,7 @@ function GetStarted({ submitForm }) {
           <input
             type="text"
             id="fullname"
+            className="get-started-input"
             name="fullname"
             value={values.fullname}
             onChange={handleChange}
@@ -63,6 +64,7 @@ function GetStarted({ submitForm }) {
           <input
             type="text"
             id="email"
+            className="get-started-input"
             name="email"
             value={values.email}
             onChange={handleChange}
@@ -75,6 +77,7 @@ function GetStarted({ submitForm }) {
           <input
             type={passwordShown ? "text" : "password"}
             id="password"
+            className="get-started-input"
             name="password"
             value={values.password}
             onChange={handleChange}
