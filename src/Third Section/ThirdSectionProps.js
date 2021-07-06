@@ -5,8 +5,8 @@ function ThirdSectionProps(props) {
   return (
     <>
       <div className="second-section-parent">
-        <div className="second-section-container">
-          <div className="second-container-image">
+        <div className="second-section-container third-section-container">
+          <div className="second-container-image third-container-image">
             <img src={props.image} alt={props.alt} />
           </div>
           <div className="second-container-text third-container-text">
@@ -18,7 +18,6 @@ function ThirdSectionProps(props) {
               <img
                 src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/307adcc2a5d500d3a3a6dbf3603c8ef1bf186ba4/src/images/Arrow%20Second%20section.svg"
                 alt=""
-                className="third-container-image"
               />
             </Link>
           </div>

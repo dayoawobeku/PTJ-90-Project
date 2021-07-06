@@ -5,10 +5,10 @@
 .second-section-container {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  align-items: center;
+  height: 80vh;
   margin-left: 16rem;
   margin-right: 16rem;
-  padding-top: 16.5rem;
 }
 
 .second-container-text,
@@ -122,12 +122,16 @@
 }
 
 @media screen and (max-width: 780px) {
+  .second-section-container {
+    height: 40vh;
+  }
+
   .second-container-text {
     margin-right: 2rem;
   }
 
-  .third-container-text {
-    margin-left: 2rem;
+  .third-container-image {
+    margin-right: 2rem;
   }
 
   .second-container-text h2 {
@@ -162,12 +166,12 @@
 
 @media screen and (max-width: 680px) {
   .second-section-container {
-    display: flex;
-    flex-direction: column;
+    height: 90vh;
+    flex-wrap: wrap;
   }
 
   .third-container-image {
-    flex: 2;
+    order: 1;
   }
 
   .second-container-text h2 {
@@ -178,9 +182,24 @@
   .second-container-image img {
     max-width: 22rem;
     max-height: 24rem;
+    margin-top: 2rem;
   }
 
   .second-container-text h3 {
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .second-section-container {
+    height: 90vh;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .second-section-container {
+    height: 100vh;
   }
 }
