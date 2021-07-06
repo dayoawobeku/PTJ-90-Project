@@ -75,6 +75,15 @@
 }
 
 @media screen and (max-width: 780px) {
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fafbff;
+    padding-bottom: 4.8rem;
+  }
+
   .navbar {
     box-shadow: none;
     background-color: #fafbff;
@@ -84,7 +93,7 @@
   .navbar-logo {
     display: flex;
     position: absolute;
-    top: 2.4rem;
+    /* top: 2.4rem; */
     left: 8rem;
   }
 

@@ -123,7 +123,7 @@
 
 @media screen and (max-width: 780px) {
   .second-section-container {
-    height: 40vh;
+    height: 100%;
   }
 
   .second-container-text {
@@ -166,7 +166,6 @@
 
 @media screen and (max-width: 680px) {
   .second-section-container {
-    height: 90vh;
     flex-wrap: wrap;
   }
 
@@ -192,14 +191,13 @@
 
 @media screen and (max-width: 480px) {
   .second-section-container {
-    height: 90vh;
     margin-left: 2.4rem;
     margin-right: 2.4rem;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .second-section-container {
-    height: 100vh;
+  .second-section-image {
+    margin-top: 4rem;
   }
 }
