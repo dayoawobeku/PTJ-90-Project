@@ -16,9 +16,9 @@ function Homepage() {
       <HeroSection />
       <SecondSection />
       <ThirdSection />
-      <FourthSection />
-      <FourthSectionButton />
-      <Footer />
+      {/* <FourthSection /> */}
+      {/* <FourthSectionButton /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
