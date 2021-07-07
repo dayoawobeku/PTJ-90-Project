@@ -4,6 +4,7 @@ import "./Navbar.css";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
+
   return (
     <div>
       <nav className="navbar">

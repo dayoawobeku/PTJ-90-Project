@@ -1,5 +1,9 @@
 .navbar {
   box-shadow: 0px 2px 3px 0px hsla(0, 0%, 0%, 0.02);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar-container {
@@ -75,15 +79,6 @@
 }
 
 @media screen and (max-width: 780px) {
-  .navbar-container {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #fafbff;
-    padding-bottom: 4.8rem;
-  }
-
   .navbar {
     box-shadow: none;
     background-color: #fafbff;
@@ -93,7 +88,7 @@
   .navbar-logo {
     display: flex;
     position: absolute;
-    /* top: 2.4rem; */
+    top: 2.4rem;
     left: 8rem;
   }
 

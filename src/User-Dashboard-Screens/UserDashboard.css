@@ -1,49 +1,14 @@
-/** Styles for smaller screen navbar **/
-.min-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-.logo-div {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-}
-.min-nav .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  font-size: 40px;
-}
-.min-nav-content {
-  text-align: center;
-}
-.min-nav a {
-  padding: 8px;
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 16px;
-  color: #0b1dd5;
-  display: block;
-  transition: 0.3s;
-}
-/** Styles for smaller screen nav ends here */
-
 a {
   text-decoration: none;
 }
-.user-dashboard-g {
-  margin-bottom: 10rem;
-}
 
 .main-container {
-  padding: 2.4rem 16rem 0 16rem;
+  padding: 2.4rem 16rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .dashboard-nav {
@@ -51,26 +16,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 6.4rem;
-}
-
-.ham {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.dashboard-nav .nav-ul {
-  list-style-type: none;
-  display: flex;
-}
-
-.dashboard-nav .nav-ul li a {
-  text-decoration: none;
 }
 
 .nav-link-primary {
-  color: #0b1dd5;
+  color: var(--btn-color);
 }
 
 .nav-link-secondary {
@@ -81,6 +30,58 @@ a {
 .li-4 {
   margin-right: 4rem;
 }
+
+/* MEDIA QUERIES for navbar */
+
+@media screen and (max-width: 1100px) {
+  .main-container {
+    padding: 2.4rem 14rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .main-container {
+    padding: 2.4rem 8rem;
+  }
+
+  .li-4 {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main-container {
+    box-shadow: none;
+    background-color: #fafbff;
+  }
+
+  .dashboard-nav {
+    padding-bottom: 2.4rem;
+  }
+
+  .li-4 {
+    margin-right: 0rem;
+  }
+
+  .nav-lis-mobile-dashboard {
+    position: absolute;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    top: 7rem;
+    left: 0;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    background-color: #fafbff;
+    z-index: 1;
+    padding-bottom: 3.6rem;
+  }
+}
+
+/* End of Navbar media queries */
 
 .customer {
   color: var(--btn-color);
@@ -101,7 +102,7 @@ a {
   text-align: center;
   font-size: 1.6rem;
   margin-left: auto;
-  margin-top: -2rem;
+  margin-top: 12.5rem;
   color: #0b1dd5;
 }
 
