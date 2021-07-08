@@ -1,16 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "../Navbar/Navbar.css";
 
 const DashboardHeader = () => {
-  const openNav = () => {
-    const nav = document.querySelector(".min-nav");
-    nav.style.width = "100%";
-  };
-  const closeNav = () => {
-    const nav = document.querySelector(".min-nav");
-    nav.style.width = "0%";
-  };
-
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <>
       <div className="main-container">
@@ -19,9 +12,13 @@ const DashboardHeader = () => {
             <img
               src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg"
               alt=""
+              className="navbar-logo"
             />
           </Link>
-          <ul className="nav-ul">
+          <ul
+            className={isMobile ? "nav-lis-mobile-dashboard" : "lis"}
+            onClick={() => setIsMobile(false)}
+          >
             <li className="li-4">
               <Link to="/PTJ-90-Project" className="nav-link-primary">
                 Home
@@ -38,41 +35,14 @@ const DashboardHeader = () => {
               </Link>
             </li>
           </ul>
-          <span className="ham" onClick={openNav}>
-            &#9776;
-          </span>
+          <button className="btn-mobile" onClick={() => setIsMobile(!isMobile)}>
+            {isMobile ? (
+              <i class="im im-x-mark"></i>
+            ) : (
+              <i class="im im-menu"></i>
+            )}
+          </button>
         </nav>
-
-        <div className="min-nav">
-          <div className="logo-div">
-            <Link className="navbar-brand" to="/PTJ-90-Project">
-              <img
-                src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/27ef3b0591555dffba047d94f9293074f6910d67/src/assets/Homepage%20Logo.svg"
-                alt=""
-              />
-            </Link>
-
-            <span className="closebtn" onClick={closeNav}>
-              &times;
-            </span>
-          </div>
-
-          <div className="min-nav-content">
-            <Link to="/PTJ-90-Project">Home</Link>
-            <Link to="#">My Transactions</Link>
-            <Link to="#">My Profile</Link>
-          </div>
-
-          <span className="closebtn" onClick={closeNav}>
-            &times;
-          </span>
-
-          <div className="min-nav-content">
-            <Link to="/PTJ-90-Project">Home</Link>
-            <Link to="#">My Transactions</Link>
-            <Link to="#">My Profile</Link>
-          </div>
-        </div>
       </div>
     </>
   );
