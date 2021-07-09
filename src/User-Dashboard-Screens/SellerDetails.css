@@ -1,6 +1,6 @@
 .form-seller {
   width: 44.7rem;
-  margin: 4.8rem auto 0 auto;
+  margin: 4.8rem auto 10% auto;
   background: #f0f2fe;
   border-radius: 4px;
 }
@@ -61,4 +61,24 @@ a.action-btn {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.9rem;
+}
+
+@media only screen and (max-width:500px) {
+  .form-seller {
+    width: 87.2vw;
+  }
+
+  .form-seller-parent {
+    padding: 3.2rem 2.3rem 3.6rem 2.3rem;
+  }
+
+  .seller-inputs {
+    width: 74.9vw;
+  }
+}
+
+@media only screen and (max-width: 331px) {
+  .form-seller-parent {
+    padding: 3.2rem 1.5rem 3.6rem;
+  }
 }
