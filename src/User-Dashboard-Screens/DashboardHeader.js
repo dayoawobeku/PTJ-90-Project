@@ -5,7 +5,7 @@ import "../Navbar/Navbar.css";
 const DashboardHeader = () => {
   const [isMobile, setIsMobile] = useState(false);
   return (
-    <>
+    <div>
       <div className="main-container">
         <nav className="dashboard-nav">
           <Link className="navbar-brand" to="/PTJ-90-Project">
@@ -25,16 +25,17 @@ const DashboardHeader = () => {
               </Link>
             </li>
             <li className="li-4 ">
-              <Link to="" className="nav-link-secondary">
+              <Link to="/my-transactions" className="nav-link-secondary">
                 My Transactions
               </Link>
             </li>
             <li>
-              <Link to="/" className="nav-link-secondary">
+              <Link to="/my-profile" className="nav-link-secondary">
                 My Profile
               </Link>
             </li>
           </ul>
+
           <button className="btn-mobile" onClick={() => setIsMobile(!isMobile)}>
             {isMobile ? (
               <i class="im im-x-mark"></i>
@@ -44,7 +45,8 @@ const DashboardHeader = () => {
           </button>
         </nav>
       </div>
-    </>
+      <button className="cus">Customer</button>
+    </div>
   );
 };
 
