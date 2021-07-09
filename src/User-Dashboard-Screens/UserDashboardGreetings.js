@@ -23,17 +23,22 @@ const UserDashboardGreetings = () => {
   return (
     <div className="user-dashboard-g">
       <DashboardHeader />
-      <p className="complete-prof">
-        Please complete your profile for a more personalized experience
-      </p>
+      <div className="complete-profile">
+        <Link to="/profile" className="complete-prof">
+          Please complete your profile for a more personalized experience
+        </Link>
+      </div>
 
       <div className="g-text">
         <div>
-          <p className="greeting">Good {timeOfDay} David,</p>
-          <p className="purchase">
-            Click the button below to make a purchase with Escrow
-          </p>
-          <Link to="/seller-details">Proceed</Link>
+          {/* <p className="greeting">Good {timeOfDay} David,</p> */}
+          <img
+            src="https://raw.githubusercontent.com/awobekuD/PTJ-90-Project/944fee902353c7be3f55beaba5acc24e5ec8d487/src/images/User%20Dashboard%20Home%20Image.svg"
+            alt=""
+            className="user-dashboard-image"
+          />
+          <p className="empty-street">An empty street, an empty house...</p>
+          <Link to="/seller-details">Create your first transaction</Link>
         </div>
       </div>
     </div>
