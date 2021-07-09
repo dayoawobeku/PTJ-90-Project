@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/PTJ-90-Project/static/css/main.86cc984c.chunk.css",
-    "main.js": "/PTJ-90-Project/static/js/main.93118574.chunk.js",
-    "main.js.map": "/PTJ-90-Project/static/js/main.93118574.chunk.js.map",
+    "main.css": "/PTJ-90-Project/static/css/main.59d98279.chunk.css",
+    "main.js": "/PTJ-90-Project/static/js/main.367efb0b.chunk.js",
+    "main.js.map": "/PTJ-90-Project/static/js/main.367efb0b.chunk.js.map",
     "runtime-main.js": "/PTJ-90-Project/static/js/runtime-main.ecd9ac08.js",
     "runtime-main.js.map": "/PTJ-90-Project/static/js/runtime-main.ecd9ac08.js.map",
-    "static/js/2.dd9c085b.chunk.js": "/PTJ-90-Project/static/js/2.dd9c085b.chunk.js",
-    "static/js/2.dd9c085b.chunk.js.map": "/PTJ-90-Project/static/js/2.dd9c085b.chunk.js.map",
+    "static/js/2.bb829af0.chunk.js": "/PTJ-90-Project/static/js/2.bb829af0.chunk.js",
+    "static/js/2.bb829af0.chunk.js.map": "/PTJ-90-Project/static/js/2.bb829af0.chunk.js.map",
     "index.html": "/PTJ-90-Project/index.html",
-    "static/css/main.86cc984c.chunk.css.map": "/PTJ-90-Project/static/css/main.86cc984c.chunk.css.map",
-    "static/js/2.dd9c085b.chunk.js.LICENSE.txt": "/PTJ-90-Project/static/js/2.dd9c085b.chunk.js.LICENSE.txt"
+    "static/css/main.59d98279.chunk.css.map": "/PTJ-90-Project/static/css/main.59d98279.chunk.css.map",
+    "static/js/2.bb829af0.chunk.js.LICENSE.txt": "/PTJ-90-Project/static/js/2.bb829af0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ecd9ac08.js",
-    "static/js/2.dd9c085b.chunk.js",
-    "static/css/main.86cc984c.chunk.css",
-    "static/js/main.93118574.chunk.js"
+    "static/js/2.bb829af0.chunk.js",
+    "static/css/main.59d98279.chunk.css",
+    "static/js/main.367efb0b.chunk.js"
   ]
 }
