@@ -64,13 +64,13 @@
 
 @media screen and (max-width: 1100px) {
   .navbar-container {
-    padding: 2.4rem 14rem;
+    padding: 2.4rem 12.7%;
   }
 }
 
 @media screen and (max-width: 990px) {
   .navbar-container {
-    padding: 2.4rem 8rem;
+    padding: 2.4rem 8.1%;
   }
 
   .links {
@@ -89,7 +89,7 @@
     display: flex;
     position: absolute;
     top: 2.4rem;
-    left: 8rem;
+    left: 10.3%;
   }
 
   .links {
@@ -130,7 +130,7 @@
     position: absolute;
     font-size: 24px;
     top: 2.8rem;
-    right: 8rem;
+    right: 10.3%;
     outline: none;
     background-color: #fafbff;
   }
