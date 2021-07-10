@@ -38,7 +38,14 @@ const UserDashboardGreetings = () => {
             className="user-dashboard-image"
           />
           <p className="empty-street">An empty street, an empty house...</p>
-          <Link to="/seller-details">Create your first transaction</Link>
+          <div className="dashboard-buttons">
+            <Link to="/seller-details" className="dashboard-button-primary">
+              Create your first transaction
+            </Link>
+            <Link to="/seller-details" className="dashboard-button-secondary">
+              View vendors
+            </Link>
+          </div>
         </div>
       </div>
     </div>
