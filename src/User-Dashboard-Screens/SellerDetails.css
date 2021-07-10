@@ -4,11 +4,7 @@
 
 .form-seller {
   width: 44.7rem;
-<<<<<<< HEAD
-  margin: 4.8rem auto 10% auto;
-=======
   margin: 3.2rem auto 10% auto;
->>>>>>> 45efaa45c4d5be2197c275e929410a9921f457e1
   background: #f0f2fe;
   border-radius: 4px;
 }
@@ -73,11 +69,7 @@ a.action-btn {
   line-height: 1.9rem;
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width:500px) {
-=======
 @media only screen and (max-width: 500px) {
->>>>>>> 45efaa45c4d5be2197c275e929410a9921f457e1
   .form-seller {
     width: 87.2vw;
   }
@@ -95,9 +87,5 @@ a.action-btn {
   .form-seller-parent {
     padding: 3.2rem 1.5rem 3.6rem;
   }
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> 45efaa45c4d5be2197c275e929410a9921f457e1

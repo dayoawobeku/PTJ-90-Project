@@ -94,18 +94,11 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
-  .cus-container{
-    margin: 12rem 2.4rem 0!important;
-  }
-}
-=======
   .cus-container {
     margin: 12rem 2.4rem 0 !important;
   }
 }
 
->>>>>>> 45efaa45c4d5be2197c275e929410a9921f457e1
 /* End of Navbar media queries */
 
 .cus-container {
