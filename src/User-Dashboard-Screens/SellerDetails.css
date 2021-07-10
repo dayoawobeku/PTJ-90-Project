@@ -4,7 +4,7 @@
 
 .form-seller {
   width: 44.7rem;
-  margin: 3.2rem auto 10% auto;
+  margin: 4rem auto 10% auto;
   background: #f0f2fe;
   border-radius: 4px;
 }
@@ -60,18 +60,20 @@
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
+  border: 0;
 }
 
-a.action-btn {
+/* a.action-btn {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.9rem;
-}
+} */
 
 @media only screen and (max-width: 500px) {
   .form-seller {
     width: 87.2vw;
+    margin-top: 3.2rem;
   }
 
   .form-seller-parent {
