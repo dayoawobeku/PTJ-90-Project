@@ -45,9 +45,16 @@ const DashboardHeader = () => {
           </button>
         </nav>
       </div>
+<<<<<<< HEAD
       <div className="cus-container">
       <button className="cus">Customer</button>
       </div>
+=======
+
+      <button className="cus">Customer</button>
+      </div>
+
+>>>>>>> 45efaa45c4d5be2197c275e929410a9921f457e1
     </div>
   );
 };
