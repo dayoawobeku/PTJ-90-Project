@@ -46,7 +46,6 @@ const DashboardHeader = () => {
         </nav>
       </div>
 
-      <div className="cus-container">
       <button className="cus">Customer</button>
       </div>
 
