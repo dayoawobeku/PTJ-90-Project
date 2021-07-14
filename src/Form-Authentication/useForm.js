@@ -5,9 +5,6 @@ const useForm = (callback, validate) => {
     fullname: "",
     email: "",
     password: "",
-    sellerName: "",
-    sellerSocial: "",
-    sellerPhoneNumber: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -37,7 +34,7 @@ const useForm = (callback, validate) => {
 
   console.log(callback, errors, isSubmitting);
 
-  return { handleChange, values, handleSubmit, errors, callback };
+  return { handleChange, values, handleSubmit, errors };
 };
 
 export default useForm;

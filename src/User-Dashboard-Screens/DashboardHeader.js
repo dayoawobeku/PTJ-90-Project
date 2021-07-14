@@ -34,6 +34,11 @@ const DashboardHeader = () => {
                 My Profile
               </Link>
             </li>
+            <li>
+              <Link to="/logout" className="nav-link-secondary">
+                Logout
+              </Link>
+            </li>
           </ul>
 
           <button className="btn-mobile" onClick={() => setIsMobile(!isMobile)}>
@@ -46,7 +51,6 @@ const DashboardHeader = () => {
         </nav>
       </div>
 
-      <div className="cus-container">
       <button className="cus">Customer</button>
       </div>
 

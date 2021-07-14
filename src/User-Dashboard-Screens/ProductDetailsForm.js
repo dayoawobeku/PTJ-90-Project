@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import SellerDetails from "./SellerDetails";
-// import ProductDetails from "./ProductDetails";
+// import SellerDetails from "./SellerDetails";
+import ProductDetails from "./ProductDetails";
 import { Redirect } from "react-router-dom";
 
-const SellerDetailsForm = () => {
+const ProductDetailsForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitForm() {
@@ -13,12 +13,12 @@ const SellerDetailsForm = () => {
   return (
     <div>
       {!isSubmitted ? (
-        <SellerDetails submitForm={submitForm} />
+        <ProductDetails submitForm={submitForm} />
       ) : (
-        <Redirect to="product-details" />
+        <Redirect to="payment" />
       )}
     </div>
   );
 };
 
-export default SellerDetailsForm;
+export default ProductDetailsForm;

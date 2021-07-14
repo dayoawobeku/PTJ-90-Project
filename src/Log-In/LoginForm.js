@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LogIn from "./LogIn";
-import { Redirect } from "react-router-dom";
+import UserDashboardGreetings from "../User-Dashboard-Screens/UserDashboardGreetings";
 
 const LoginForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -14,7 +14,7 @@ const LoginForm = () => {
       {!isSubmitted ? (
         <LogIn submitForm={submitForm} />
       ) : (
-        <Redirect to="user-dashboard" />
+        <UserDashboardGreetings />
       )}
     </div>
   );
