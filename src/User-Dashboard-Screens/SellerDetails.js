@@ -18,6 +18,7 @@ const SellerDetails = ({ submitForm }) => {
   //   console.log(values);
   // }
 
+
   return (
     <div>
       <div className="seller-container">
@@ -43,7 +44,6 @@ const SellerDetails = ({ submitForm }) => {
               />
               {errors.sellerName && <p>{errors.sellerName}</p>}
             </div>
-
             <div className="social-container seller-inputs-parent">
               <label htmlFor="sellerSocial" className="seller-labels">
                 Social media handle
@@ -59,7 +59,6 @@ const SellerDetails = ({ submitForm }) => {
               />
               {errors.sellerSocial && <p>{errors.sellerSocial}</p>}
             </div>
-
             <div className="phone-container seller-inputs-parent">
               <label htmlFor="sellerPhoneNumber" className="seller-labels">
                 Phone number
