@@ -9,6 +9,12 @@
   border-radius: 4px;
 }
 
+.form-seller p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
 .form-seller-parent {
   display: flex;
   flex-direction: column;

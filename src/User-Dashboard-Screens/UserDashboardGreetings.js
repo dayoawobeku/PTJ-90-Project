@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import DashboardHeader from "./DashboardHeader";
 import { Link } from "react-router-dom";
 import "./UserDashboard.css";
 
 const UserDashboardGreetings = () => {
-  const [timeOfDay, setTimeOfDay] = useState(null);
+  // const [timeOfDay, setTimeOfDay] = useState(null);
 
-  useEffect(() => {
-    const today = new Date();
-    let time = today.getHours();
+  // useEffect(() => {
+  //   const today = new Date();
+  //   let time = today.getHours();
 
-    if (time >= 0 && time < 12) {
-      setTimeOfDay("morning");
-    } else if (time >= 12 && time < 16) {
-      setTimeOfDay("afternoon");
-    } else {
-      setTimeOfDay("evening");
-    }
-    console.log(timeOfDay);
-  }, [timeOfDay]);
+  //   if (time >= 0 && time < 12) {
+  //     setTimeOfDay("morning");
+  //   } else if (time >= 12 && time < 16) {
+  //     setTimeOfDay("afternoon");
+  //   } else {
+  //     setTimeOfDay("evening");
+  //   }
+  //   console.log(timeOfDay);
+  // }, [timeOfDay]);
 
   return (
     <div className="user-dashboard-g">
