@@ -3,7 +3,7 @@ a {
 }
 
 .main-container {
-  padding: 2.4rem 16rem;
+  padding: 2.4rem 11.1%;
   position: absolute;
   left: 0;
   top: 0;
@@ -38,8 +38,8 @@ a {
     padding: 2.4rem 12.7%;
   }
 
-  .cus-container {
-    margin: 12rem 12.7% 0 !important;
+  .cus-container{
+    margin: 12rem 12.7% 0!important;
   }
 }
 
@@ -48,8 +48,8 @@ a {
     padding: 2.4rem 8.1%;
   }
 
-  .cus-container {
-    margin: 12rem 8.1% 0 !important;
+  .cus-container{
+    margin: 12rem 8.1% 0!important;
   }
 
   .li-4 {
@@ -63,8 +63,8 @@ a {
     background-color: #fafbff;
   }
 
-  .cus-container {
-    margin: 12rem 10.3% 0 !important;
+  .cus-container{
+    margin: 12rem 10.3% 0!important;
   }
 
   .dashboard-nav {
