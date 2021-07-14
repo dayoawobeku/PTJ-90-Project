@@ -34,11 +34,11 @@ const DashboardHeader = () => {
                 My Profile
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/logout" className="nav-link-secondary">
                 Logout
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <button className="btn-mobile" onClick={() => setIsMobile(!isMobile)}>

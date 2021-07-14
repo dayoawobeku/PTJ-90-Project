@@ -31,6 +31,10 @@ a {
   margin-right: 4rem;
 }
 
+.cus {
+  padding: 2.4rem 11.1%;
+}
+
 /* MEDIA QUERIES for navbar */
 
 @media screen and (max-width: 1100px) {
@@ -38,8 +42,8 @@ a {
     padding: 2.4rem 12.7%;
   }
 
-  .cus-container{
-    margin: 12rem 12.7% 0!important;
+  .cus-container {
+    margin: 12rem 12.7% 0 !important;
   }
 }
 
@@ -48,8 +52,8 @@ a {
     padding: 2.4rem 8.1%;
   }
 
-  .cus-container{
-    margin: 12rem 8.1% 0!important;
+  .cus-container {
+    margin: 12rem 8.1% 0 !important;
   }
 
   .li-4 {
@@ -63,8 +67,8 @@ a {
     background-color: #fafbff;
   }
 
-  .cus-container{
-    margin: 12rem 10.3% 0!important;
+  .cus-container {
+    margin: 12rem 10.3% 0 !important;
   }
 
   .dashboard-nav {
@@ -106,7 +110,9 @@ a {
 }
 
 .cus {
-  width: 7.8rem;
+  /* width: 7.8rem; */
+  margin-top: 9.6rem;
+  margin-left: 11.1%;
   padding: 0 0.8rem 0 0.8rem;
   line-height: 2.4rem;
   border: 1px solid var(--btn-color);
@@ -177,13 +183,16 @@ a {
   .dashboard-nav .nav-ul {
     display: none;
   }
+
   .user-dashboard-g {
     padding: 2.4rem 2rem 0 2rem;
   }
+
   .customer {
     display: block;
   }
-  .customer .cus {
+
+  .cus {
     padding: 0.2rem;
     margin-bottom: 2.4rem;
     width: 6.5rem;
@@ -241,6 +250,8 @@ a {
 .p-q input[type="number"] {
   border-color: rgba(11, 29, 213, 0.3);
   background-color: inherit;
+  max-width: 14rem;
+  margin-right: 2rem;
 }
 
 .price-and-qty {
@@ -256,7 +267,7 @@ a {
   width: 12.7rem;
 }
 
-.p-d-h2 {
+.p-d-header {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -289,6 +300,7 @@ a {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
+  border: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -310,7 +322,7 @@ a {
     width: 34.7vw;
     margin-right: 2.5rem;
   }
-  
+
   .quantity-input {
     width: 33.9vw;
   }
@@ -318,9 +330,7 @@ a {
   .product-action {
     margin-top: 10.4rem;
   }
-
 }
-
 
 @media only screen and (max-width: 331px) {
   .product-d-box {
