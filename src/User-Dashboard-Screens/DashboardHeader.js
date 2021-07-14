@@ -52,8 +52,6 @@ const DashboardHeader = () => {
       </div>
 
       <button className="cus">Customer</button>
-      </div>
-
     </div>
   );
 };
