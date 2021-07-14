@@ -2,15 +2,22 @@ import React from "react";
 import DashboardHeader from "./DashboardHeader";
 import "./SellerDetails.css";
 // import { Link } from "react-router-dom";
-import useForm from "../Form-Authentication/useForm";
 import validateSellerDetails from "./sellerDetailsValidation";
 // import sellerDetailsForm from "./sellerDetailsForm";
+import useSellerForm from "./useSellerForm";
 
 const SellerDetails = ({ submitForm }) => {
-  const { handleChange, handleSubmit, values, errors } = useForm(
+  const { handleChange, handleSubmit, values, errors } = useSellerForm(
+    // seller,
     submitForm,
     validateSellerDetails
   );
+
+  // function seller() {
+  //   console.log("No errors, submit callback called!");
+  //   console.log(values);
+  // }
+
 
   return (
     <div>
@@ -19,7 +26,7 @@ const SellerDetails = ({ submitForm }) => {
           <DashboardHeader />
         </div>
 
-        <form class="form-seller" onSubmit={handleSubmit}>
+        <form class="form-seller" onSubmit={handleSubmit} noValidate>
           <div className="form-seller-parent">
             <h2>Seller's Details</h2>
             <div className="name-container seller-inputs-parent">
@@ -31,7 +38,7 @@ const SellerDetails = ({ submitForm }) => {
                 id="name"
                 // required
                 name="sellerName"
-                value={values.sellerName}
+                value={values.sellerName || ""}
                 onChange={handleChange}
                 className="seller-inputs"
               />
@@ -46,7 +53,7 @@ const SellerDetails = ({ submitForm }) => {
                 id="social"
                 // required
                 name="sellerSocial"
-                value={values.sellerSocial}
+                value={values.sellerSocial || ""}
                 onChange={handleChange}
                 className="seller-inputs"
               />
@@ -61,7 +68,7 @@ const SellerDetails = ({ submitForm }) => {
                 id="phone"
                 // required
                 name="sellerPhoneNumber"
-                value={values.sellerPhoneNumber}
+                value={values.sellerPhoneNumber || ""}
                 onChange={handleChange}
                 className="seller-inputs"
               />

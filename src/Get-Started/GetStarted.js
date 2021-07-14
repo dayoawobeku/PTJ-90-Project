@@ -84,7 +84,6 @@ function GetStarted({ submitForm }) {
             placeholder="*********"
           />
 
-
           <div className="password-show">
             <i
               onClick={togglePasswordVisibility}
