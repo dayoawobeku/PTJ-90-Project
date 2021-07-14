@@ -18,7 +18,6 @@ const SellerDetails = ({ submitForm }) => {
   //   console.log(values);
   // }
 
-
   return (
     <div>
       <div className="seller-container">
