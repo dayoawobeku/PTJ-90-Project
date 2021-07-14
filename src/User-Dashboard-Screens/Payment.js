@@ -7,18 +7,7 @@ const Payment = () => {
     <>
       <UserDashboardLayout>
         <header className="p-d-header">Payment and Checkout</header>
-        <form>
-          <p>Payment method</p>
-          <input type="radio" name="payment-method" id="payment-method" />
-          <label htmlFor="payment-method" className="payment-label">
-            Cash on Delivery
-          </label>
-          <br />
-          <input type="radio" name="payment-method" id="payment-method" />
-          <label htmlFor="payment-method" className="payment-label">
-            Bank Transfer
-          </label>
-        </form>
+
         <p className="sc">
           Escrow Service charge (4%){" "}
           <span style={{ float: "right" }}>N200</span>
@@ -36,8 +25,8 @@ const Payment = () => {
           </p>
         </div>
         <p className="ad-q">
-          Is your delivery address same as your profile?{" "}
-          <Link>No, I want to change it.</Link>
+          Is your delivery address the same as in your profile?{" "}
+          <Link to="my-profile">No, I want to change it.</Link>
         </p>
         <button className="check-out-btn">Proceed to checkout</button>
       </UserDashboardLayout>

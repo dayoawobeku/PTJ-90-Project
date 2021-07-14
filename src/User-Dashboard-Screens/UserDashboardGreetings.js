@@ -24,7 +24,7 @@ const UserDashboardGreetings = () => {
     <div className="user-dashboard-g">
       <DashboardHeader />
       <div className="complete-profile">
-        <Link to="/profile" className="complete-prof">
+        <Link to="/my-profile" className="complete-prof">
           Please complete your profile for a more personalized experience
         </Link>
       </div>
@@ -42,7 +42,7 @@ const UserDashboardGreetings = () => {
             <Link to="/seller-details" className="dashboard-button-primary">
               Create your first transaction
             </Link>
-            <Link to="/seller-details" className="dashboard-button-secondary">
+            <Link to="/vendors" className="dashboard-button-secondary">
               View vendors
             </Link>
           </div>

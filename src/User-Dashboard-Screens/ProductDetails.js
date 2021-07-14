@@ -15,10 +15,17 @@ const ProductDetails = ({ submitForm }) => {
   //   console.log(values);
   // }
 
+  // let history = useHistory();
+  // history.push("/seller-details");
+
+  // const priceValue = values.price;
+  // const quantityValue = values.quantity;
+  // const priceQuantity = priceValue * quantityValue;
+
   return (
     <UserDashboardLayout>
       <form className="product-details-form" onSubmit={handleSubmit} noValidate>
-        <div className="damn">
+        <div>
           <h2 className="p-d-header">Product Details</h2>
           <div className="p-q">
             <div className="description product-details-labels ">
@@ -39,6 +46,7 @@ const ProductDetails = ({ submitForm }) => {
                 <input
                   type="number"
                   step="100"
+                  min="100"
                   name="price"
                   value={values.price || ""}
                   onChange={handleChange}
