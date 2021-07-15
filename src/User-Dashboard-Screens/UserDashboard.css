@@ -236,6 +236,12 @@ a {
   flex-direction: column;
 }
 
+.product-details-form p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
 .description {
   margin-bottom: 2.4rem;
 }
@@ -396,4 +402,5 @@ input[type="radio"] {
   color: #fff;
   padding: 10px;
   border: none;
+  cursor: pointer;
 }
