@@ -1,6 +1,7 @@
 import React from "react";
 import UserDashboardLayout from "./UserDashboardLayout";
 import { Link } from "react-router-dom";
+import FlutterApp from "../Flutterwave";
 
 const Payment = () => {
   return (
@@ -28,7 +29,8 @@ const Payment = () => {
           Is your delivery address the same as in your profile?{" "}
           <Link to="my-profile">No, I want to change it.</Link>
         </p>
-        <button className="check-out-btn">Proceed to checkout</button>
+        {/* <button className="check-out-btn">Proceed to checkout</button> */}
+        <FlutterApp />
       </UserDashboardLayout>
     </>
   );
